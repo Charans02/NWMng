@@ -20,8 +20,8 @@ const soraSans = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Trash Lion | Philadelphia's #1 Top Rated Junk Removal Team",
-  description: "Philadelphia's #1 Top Rated Junk Removal Team",
+  title: "NW Mngmt | Florida's #1 Top Rated Junk Removal Team",
+  description: "Florida's #1 Top Rated Junk Removal Team",
 };
 
 export default function RootLayout({

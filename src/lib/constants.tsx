@@ -24,7 +24,7 @@ export const CONTACT_INFO = [
   {
     name: "Phone",
     icon: <Phone size={16} className="stroke-foreground fill-background" />,
-    value: "267-356-1542",
+    value: "813-579-0912",
   },
 ];
 
@@ -144,7 +144,7 @@ export const EXPERT_IMAGES: Expert[] = [
     img_group: [
       {
         id: 1,
-        img_url: "/images/image.png",
+        img_url: "/images/image.jpg",
         img_name: "Expert 1",
       },
       {
@@ -174,7 +174,7 @@ export const EXPERT_IMAGES: Expert[] = [
     img_group: [
       {
         id: 1,
-        img_url: "/images/image.png",
+        img_url: "/images/image.jpg",
         img_name: "Expert 1",
       },
       {
@@ -204,7 +204,7 @@ export const EXPERT_IMAGES: Expert[] = [
     img_group: [
       {
         id: 1,
-        img_url: "/images/image.png",
+        img_url: "/images/image.jpg",
         img_name: "Expert 1",
       },
       {

@@ -15,8 +15,8 @@ const CTA = () => {
             className="object-cover object-center"
           />
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[24px] leading-[36px] tracking-tighter sm:text-[36px] sm:leading-[45px] xl:text-[56px] xl:leading-[74px]">
-            Ready to see your junk{" "}
-            <span className="font-semibold underline">Disappear?</span>
+            Call for Price{" "}
+            <span className="font-semibold underline">Estimates!</span>
           </p>
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[13px] leading-[20px] tracking-tight sm:text-[18px] sm:leading-[23px] xl:text-[27px] xl:leading-[38px]">
             Fill out our quick contact form and will get back to you asap.

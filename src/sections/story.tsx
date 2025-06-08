@@ -27,8 +27,8 @@ const Story = () => {
         </div>
         <div className="flex w-full flex-col items-center gap-8">
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[28px] leading-[44px] font-normal uppercase lg:text-left">
-            <span className="text-red font-extrabold">Trash lions, </span>
-            promise to Philadelphia
+            <span className="text-red font-extrabold">NW Mngmt, </span>
+            promise to Florida
           </p>
           <p className="text-center font-[family-name:var(--font-lato-sans)] text-[18px] leading-[34px] font-normal lg:text-left">
             <span className="font-bold text-[#d80027]">

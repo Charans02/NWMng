@@ -15,7 +15,7 @@ const Hero = () => {
               width={553}
               height={737}
               quality={100}
-              className="mx-auto w-full max-w-[280px] scale-x-[-1] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
+              className="mx-auto w-full max-w-[280px] scale-x-[1] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
               priority
             />
           </div>
@@ -25,14 +25,14 @@ const Hero = () => {
               className="text-center text-[38px] leading-[50px] sm:text-[28px] sm:leading-[43px] md:text-[34px] md:leading-[43px] lg:text-left xl:text-left xl:text-[55px] xl:leading-[78px]"
             >
               <span className="text-red font-extrabold">
-                Philadelphia&apos;s
+                Florida&apos;s
               </span>
               <br />
               #1 Top Rated Junk <br /> Removal Team
             </Text>
             <Text className="text-center text-[16px] leading-[23px] md:text-left md:text-[18px] lg:text-left lg:text-[21px] lg:leading-[26px] xl:text-left">
               <span className="leading-[33px] font-bold">
-                Proudly serving Philadelphia for 10 years
+                Proudly serving Florida for several years
               </span>
               {/* <br /> */}
               <span className="hidden">From clean outs to residential junk hauling.</span>
@@ -71,7 +71,7 @@ const Hero = () => {
                 width={553}
                 height={737}
                 quality={100}
-                className="mx-auto w-full max-w-[280px] scale-x-[-1] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
+                className="mx-auto w-full max-w-[280px] scale-x-[1] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
                 priority
               />
             </div>

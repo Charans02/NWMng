@@ -39,7 +39,7 @@ const Contact = () => {
   );
 
   const locations = [
-    { name: "Philadelphia", latitude: 39.9526, longitude: -75.1652 },
+    { name: "Florida", latitude: 27.994402, longitude: -81.760254 },
   ];
 
   const markers: LatLngTuple[] = locations.map((location) => [
@@ -55,9 +55,9 @@ const Contact = () => {
       >
         <div className="z-10 w-full flex-1">
           <Text variant="h2" className="text-center xl:text-left">
-            Want to Hire The Best In {isMediumScreen && <br />} Philadelphia
+            Want to Hire The Best In {isMediumScreen && <br />} Florida
             <br />
-            <span className="text-red hidden"> Call Trash Lion</span>
+            <span className="text-red hidden"> Call NW Mngmt</span>
           </Text>
           {/* <Image
             src="/images/map.png"
@@ -67,7 +67,7 @@ const Contact = () => {
             className="border-red mt-8 w-full rounded-md border shadow sm:rounded-lg xl:rounded-xl"
           /> */}
           <div className="border-red mx-auto mt-8 h-[500px] overflow-hidden rounded-md border shadow sm:rounded-lg xl:rounded-xl">
-            <Map posix={[39.9526, -75.1652]} markers={markers} />
+            <Map posix={[27.994402, -81.760254]} markers={markers} />
           </div>
         </div>
         <div className="flex w-full flex-1 flex-col items-center gap-4 rounded-2xl bg-white p-8 shadow">

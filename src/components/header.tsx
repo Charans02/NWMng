@@ -105,7 +105,7 @@ const Header = () => {
               className="block h-[34px] w-[38px] md:hidden xl:h-[122px] xl:w-[134px]"
             />
             <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
-              Trash&nbsp;
+              NW&nbsp;
             </p>
             <Image
               src="/images/logo.png"
@@ -115,7 +115,7 @@ const Header = () => {
               className="hidden h-[34px] w-[38px] md:block md:h-[69px] md:w-[77px] xl:h-[80px] xl:w-[95px]"
             />
             <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
-              Lion
+              Mngmt
             </p>
           </Link>
 
@@ -126,7 +126,7 @@ const Header = () => {
               onClick={(e) => handleNavClick(e, "top")}
             >
               <p className="font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-semibold">
-                Trash
+                NW
               </p>
               <Image
                 src="/images/logo.png"
@@ -136,7 +136,7 @@ const Header = () => {
                 className="h-[80px] w-[95px]"
               />
               <p className="font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-semibold">
-                Lion
+                Mngmt
               </p>
             </Link>
           </div>
@@ -145,13 +145,13 @@ const Header = () => {
             <div className="hidden items-center gap-2.5 text-nowrap xl:flex">
               <PhoneCall size={30} fill="red" stroke="none" />
               <p className="font-[family-name:var(--font-sora-sans)] text-[20px] leading-[100%] font-bold">
-                267 - 356 - 1542
+                813 - 579 - 0912
               </p>
             </div>
             <button
               className="group bg-red hover:text-red flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
               onClick={() => {
-                const phone = "+12673561542";
+                const phone = "+18135790912";
                 window.open(`tel:${phone}`, "_self");
               }}
             >

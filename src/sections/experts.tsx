@@ -45,8 +45,8 @@ const Experts = () => {
                   variant="h2"
                   className="max-w-[517px] text-center xl:text-left"
                 >
-                  See Our Junk Removal
-                  <span className="text-red"> Experts </span>
+                  Hire Our
+                  <span className="text-red"> Trucks </span>
                   At Work!
                 </Text>
               </div>
@@ -63,7 +63,7 @@ const Experts = () => {
                   <Image
                     src={
                       EXPERT_IMAGES[0].img_group[0]?.img_url ||
-                      "/images/image.png"
+                      "/images/image.jpg"
                     }
                     alt={EXPERT_IMAGES[0].img_group[0]?.img_name || ""}
                     fill

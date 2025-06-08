@@ -1,14 +1,14 @@
 import Banner from "@/components/banner";
 import {
   Hero,
-  States,
-  Comparison,
-  Services,
+  // States,
+  // Comparison,
+  // Services,
   Testimonials,
   Story,
-  WhyChoose,
+  // WhyChoose,
   Experts,
-  ServiceAreas,
+  // ServiceAreas,
   Contact,
   CTA,
   JunkRemovalQuote,
@@ -22,15 +22,15 @@ export default function Home() {
         <JunkRemovalQuote />
       </div>
       <Banner />
-      <Services />
-      <Comparison />
-      <States />
-      <Testimonials />
+      {/* <Services /> */}
+      {/* <Comparison /> */}
       <Story />
+      {/* <States /> */}
+      <Testimonials />
       <Banner />
-      <WhyChoose />
+      {/* <WhyChoose /> */}
       <Experts />
-      <ServiceAreas />
+      {/* <ServiceAreas /> */}
       <Contact />
       <CTA />
     </>

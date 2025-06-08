@@ -12,7 +12,7 @@ const Footer = () => {
           <section className="flex !max-w-[640px] flex-col-reverse items-center justify-between gap-16 lg:!max-w-[860px] xl:!max-w-[1512px] xl:flex-row xl:items-start">
             <div className="flex flex-col items-center xl:w-2/5 xl:items-start">
               <Text variant="h4">
-                Trash<span className="text-red"> Lion</span>
+                NW<span className="text-red"> Mngmt</span>
               </Text>
               <Text className="mt-4">
                 We take on jobs ranging from, junk removal, house/yard clean

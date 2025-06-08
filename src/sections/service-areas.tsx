@@ -40,7 +40,7 @@ const ServiceAreas = () => {
           alt=""
           width={553}
           height={737}
-          className="scale-x-[-1] h-fit order-2 xl:order-1"
+          className="scale-x-[1] h-fit order-2 xl:order-1"
         />
       </div>
     </section>
