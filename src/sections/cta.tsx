@@ -7,7 +7,7 @@ const CTA = () => {
   return (
     <div className="bg-white">
       <section className="px-20 py-10">
-        <div className="bg-red-gradient relative flex w-full flex-col items-center gap-5 rounded-3xl px-10 py-10 text-white sm:gap-8 lg:px-20 xl:gap-10 xl:px-[100px] xl:py-20">
+        <div className="bg-lime-600 relative flex w-full flex-col items-center gap-5 rounded-3xl px-10 py-10 text-white sm:gap-8 lg:px-20 xl:gap-10 xl:px-[100px] xl:py-20">
           <Image
             src="/images/cta-pattern.png"
             alt=""
@@ -25,7 +25,7 @@ const CTA = () => {
             <div className="flex items-center gap-4 xl:gap-5">
               <Mail
                 fill="white"
-                stroke="#d80027"
+                stroke="#6B8E23"
                 className="size-6 sm:size-8 lg:size-9"
               />
               <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[30px] font-semibold sm:text-[20px] sm:leading-[50px] xl:text-[25px] xl:leading-[63px]">

@@ -57,7 +57,7 @@ const Contact = () => {
           <Text variant="h2" className="text-center xl:text-left">
             Want to Hire The Best In {isMediumScreen && <br />} Florida
             <br />
-            <span className="text-red hidden"> Call NW Mngmt</span>
+            <span className="text-lime-500 hidden"> Call NW Mngmt</span>
           </Text>
           {/* <Image
             src="/images/map.png"
@@ -66,12 +66,12 @@ const Contact = () => {
             height={349}
             className="border-red mt-8 w-full rounded-md border shadow sm:rounded-lg xl:rounded-xl"
           /> */}
-          <div className="border-red mx-auto mt-8 h-[500px] overflow-hidden rounded-md border shadow sm:rounded-lg xl:rounded-xl">
+          <div className="border-lime-600 mx-auto mt-8 h-[500px] overflow-hidden rounded-md border shadow sm:rounded-lg xl:rounded-xl">
             <Map posix={[27.994402, -81.760254]} markers={markers} />
           </div>
         </div>
         <div className="flex w-full flex-1 flex-col items-center gap-4 rounded-2xl bg-white p-8 shadow">
-          <p className="text-red mb-8 text-center font-[family-name:var(--font-sora-sans)] text-[40px] leading-[40px] font-semibold xl:text-left">
+          <p className="text-lime-700 mb-8 text-center font-[family-name:var(--font-sora-sans)] text-[40px] leading-[40px] font-semibold xl:text-left">
             Reach out to Trash Lion!
           </p>
           <form
@@ -114,7 +114,7 @@ const Contact = () => {
               <Text className="!text-left uppercase">Full Name</Text>
               <input
                 name="name"
-                className="focus:outline-red w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
+                className="focus:outline-lime-500 w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
                 placeholder="Ryan"
                 required
               />
@@ -124,7 +124,7 @@ const Contact = () => {
               <input
                 name="email"
                 type="email"
-                className="focus:outline-red w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
+                className="focus:outline-lime-500 w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
                 placeholder="Ryan@trashlion.com"
                 required
               />
@@ -133,7 +133,7 @@ const Contact = () => {
               <Text className="!text-left uppercase">Phone</Text>
               <input
                 name="phone"
-                className="focus:outline-red w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
+                className="focus:outline-lime-500 w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
                 placeholder="738-655-4789"
                 required
               />
@@ -142,7 +142,7 @@ const Contact = () => {
               <Text className="!text-left uppercase">Message</Text>
               <textarea
                 name="message"
-                className="focus:outline-red h-[150px] w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
+                className="focus:outline-lime-500 h-[150px] w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
                 placeholder="How can we help you?"
                 required
               />
@@ -150,7 +150,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={loading}
-              className="bg-red mt-8 flex w-full cursor-pointer items-center justify-center gap-3 rounded-2xl px-6 py-5 text-white disabled:opacity-70"
+              className="bg-lime-600 mt-8 flex w-full cursor-pointer items-center justify-center gap-3 rounded-2xl px-6 py-5 text-white disabled:opacity-70"
             >
               <CircleChevronRight size={20} />
               <Text variant="button">

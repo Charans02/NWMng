@@ -66,7 +66,7 @@ const JunkRemovalQuote = () => {
 
   return (
     <div className="z-100 mx-auto min-w-[247.68px] px-[20px] md:px-[35px] lg:max-w-[1392px] lg:px-[60px] xl:px-0">
-      <div className="bg-red-gradient-2 mx-auto rounded-[19.38px] px-[19.84px] pt-[20px] pb-[12px] text-white md:px-[19.84px] md:py-[21.04px] xl:rounded-[35px] xl:px-[35.84px] xl:py-[38px]">
+      <div className="bg-gradient-to-r from-lime-600 via-lime-500 to-lime-400 mx-auto rounded-[19.38px] px-[19.84px] pt-[20px] pb-[12px] text-white md:px-[19.84px] md:py-[21.04px] xl:rounded-[35px] xl:px-[35.84px] xl:py-[38px]">
         <h2 className="mb-[20px] text-center text-[16.6px] font-semibold md:text-[18.6px] xl:mb-[30px] xl:text-[33.6px]">
           Get your <span className="font-[800] underline">Free</span> Price Estimate
         </h2>

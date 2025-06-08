@@ -142,7 +142,7 @@ const Testimonials = () => {
               <Text variant="h2">
                 Read what our
                 <br />
-                <span className="text-red"> customers are saying!</span>
+                <span className="text-lime-500"> customers are saying!</span>
               </Text>
               <Text
                 variant="body1"
@@ -155,14 +155,14 @@ const Testimonials = () => {
             <div className="sm:mt-0 flex sm:my-auto mx-auto lg:mx-0 lg:mt-5 xl:mt-13 sm:mr-auto mb-8">
               <div className="mt-4 flex space-x-6">
                 <button
-                  className="bg-red hover:bg-red/80 flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors"
+                  className="bg-lime-500 hover:bg-lime-600/80 flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors"
                   onClick={scrollPrev}
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft size={24} />
                 </button>
                 <button
-                  className="bg-red hover:bg-red/80 flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors"
+                  className="bg-lime-500 hover:bg-lime-600/80 flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors"
                   onClick={scrollNext}
                   aria-label="Next testimonial"
                 >
@@ -208,7 +208,7 @@ const Testimonials = () => {
                     if (emblaApi) emblaApi.scrollTo(index);
                   }}
                   className={`h-2 w-2 rounded-full transition-all ${
-                    index === selectedIndex ? "bg-red" : "bg-white/70"
+                    index === selectedIndex ? "bg-lime-500" : "bg-white/70"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
@@ -253,7 +253,7 @@ const TestimonialCard = React.forwardRef<
                 <span>{t.name.charAt(0)}</span>
               )}
             </div>
-            <p className="text-red text-center font-[family-name:var(--font-lato-sans)] text-[16px] leading-[28px] font-semibold md:text-left md:text-[21px] lg:text-[26px]">
+            <p className="text-lime-500 text-center font-[family-name:var(--font-lato-sans)] text-[16px] leading-[28px] font-semibold md:text-left md:text-[21px] lg:text-[26px]">
               {t.name}
             </p>
           </div>

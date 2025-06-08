@@ -10,7 +10,7 @@ const Story = () => {
       className="flex flex-col items-center px-[80px] py-[60px]"
     >
       <Text variant="h2">
-        <span className="text-red">Our</span> Story!
+        <span className="text-lime-600">Our</span> Story!
       </Text>
       <Text className="mt-8 hidden max-w-[702px] text-center text-[#525252]">
         For 10 + years Trash Lion has been dedicated to keeping Philadelphia a
@@ -27,11 +27,11 @@ const Story = () => {
         </div>
         <div className="flex w-full flex-col items-center gap-8">
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[28px] leading-[44px] font-normal uppercase lg:text-left">
-            <span className="text-red font-extrabold">NW Mngmt, </span>
+            <span className="text-lime-500 font-extrabold">NW Mngmt, </span>
             promise to Florida
           </p>
           <p className="text-center font-[family-name:var(--font-lato-sans)] text-[18px] leading-[34px] font-normal lg:text-left">
-            <span className="font-bold text-[#d80027]">
+            <span className="font-bold text-[#6B8E23]">
               Keeping Your Home And Philadelphia A Cleaner Place.
             </span>
             <br />
@@ -59,12 +59,12 @@ const Story = () => {
               need removed from your home or business we are here for you,
             </span>
           </p>
-          <button className="group bg-red hover:text-red flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">
+          <button className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">
             <div className="relative">
               <MessageCircle size={24} />
               <Phone
                 size={10}
-                className="group-hover:fill-red absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
+                className="group-hover:fill-lime-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
               />
             </div>
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">

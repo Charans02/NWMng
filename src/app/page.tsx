@@ -1,7 +1,7 @@
 import Banner from "@/components/banner";
 import {
   Hero,
-  // States,
+  States,
   // Comparison,
   // Services,
   Testimonials,
@@ -25,7 +25,7 @@ export default function Home() {
       {/* <Services /> */}
       {/* <Comparison /> */}
       <Story />
-      {/* <States /> */}
+      <States />
       <Testimonials />
       <Banner />
       {/* <WhyChoose /> */}

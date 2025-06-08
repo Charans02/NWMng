@@ -24,7 +24,7 @@ const Hero = () => {
               variant="h1"
               className="text-center text-[38px] leading-[50px] sm:text-[28px] sm:leading-[43px] md:text-[34px] md:leading-[43px] lg:text-left xl:text-left xl:text-[55px] xl:leading-[78px]"
             >
-              <span className="text-red font-extrabold">
+              <span className="text-lime-500 font-extrabold">
                 Florida&apos;s
               </span>
               <br />

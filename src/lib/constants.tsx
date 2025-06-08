@@ -57,8 +57,8 @@ export const QUICK_LINKS = [
     url: "#story",
   },
   {
-    name: "Services",
-    url: "#services",
+    name: "Hire",
+    url: "#states",
   },
   {
     name: "Reviews",

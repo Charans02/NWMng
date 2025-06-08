@@ -46,7 +46,7 @@ const Experts = () => {
                   className="max-w-[517px] text-center xl:text-left"
                 >
                   Hire Our
-                  <span className="text-red"> Trucks </span>
+                  <span className="text-lime-600"> Trucks </span>
                   At Work!
                 </Text>
               </div>
