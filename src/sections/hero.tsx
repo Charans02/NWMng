@@ -64,14 +64,14 @@ const Hero = () => {
                 </Text>
               </div>
             </div>
-            <div className="block md:hidden md:w-5/12 lg:w-5/12 xl:w-5/12">
+            <div className="block md:hidden w-full">
               <Image
                 src="/images/truck_no_bg.png"
                 alt="Trash Lion truck"
-                width={553}
-                height={737}
+                width={753}
+                height={937}
                 quality={100}
-                className="mx-auto w-full max-w-[280px] scale-x-[1] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
+                className="mx-auto w-full max-w-[480px] sm:max-w-[520px] object-contain"
                 priority
               />
             </div>

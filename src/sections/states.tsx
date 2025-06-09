@@ -15,6 +15,11 @@ const States = () => {
             fill
             className="object-cover object-center"
           />
+          <div className="absolute bottom-[0px] flex h-[80px] w-full items-center justify-center bg-lime-700">
+            <p className="font-[family-name:var(--font-lato-sans)] text-[18px] md:text-[30px] md:leading-[60px] font-semibold text-white">
+              15 foot dumpster
+            </p>
+          </div>
         </div>
         <div className="flex w-full flex-col items-center xl:max-w-full xl:items-start order-1">
           <Text
@@ -33,7 +38,7 @@ const States = () => {
           {/* Big Centered Hire Us Button */}
           <div className="w-full mt-10 flex justify-center xl:justify-start">
             <button className="w-72 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition">
-              Hire Us
+              Rent Our Dumpster
             </button>
           </div>
         </div>

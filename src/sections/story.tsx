@@ -19,7 +19,7 @@ const Story = () => {
       <div className="mt-8 xl:mt-15 flex w-full max-w-[768px] flex-col items-center gap-8 md:gap-20 xl:max-w-full xl:flex-row xl:gap-30">
         <div className="relative mx-auto min-h-[393px] w-full xl:max-w-[550px] overflow-hidden rounded-2xl bg-white shadow">
           <Image
-            src="/images/company_logo.jpg"
+            src="/images/company_logo.png"
             alt=""
             fill
             className="object-contain"
