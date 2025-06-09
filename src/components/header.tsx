@@ -110,16 +110,16 @@ const Header = () => {
             <Image
               src="/images/logo.png"
               alt="Trash Lion Logo"
-              width={134}
-              height={122}
-              className="hidden h-[34px] w-[38px] md:block md:h-[69px] md:w-[77px] xl:h-[80px] xl:w-[95px]"
+              width={184}
+              height={172}
+              className="hidden h-[84px] w-[88px] md:block md:h-[69px] md:w-[77px] xl:h-[80px] xl:w-[95px]"
             />
             <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
               Mngmt
             </p>
           </Link>
 
-          <div className="hidden 2xl:flex 2xl:justify-self-center">
+          <div className="hidden 2xl:flex 2xl:justify-self-center 2xl:ml-7">
             <Link
               href="#"
               className="flex items-center"
@@ -131,9 +131,9 @@ const Header = () => {
               <Image
                 src="/images/logo.png"
                 alt="Trash Lion Logo"
-                width={134}
-                height={122}
-                className="h-[80px] w-[95px]"
+                width={184}
+                height={172}
+                className="h-[100px] w-[155px]"
               />
               <p className="font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-semibold">
                 Mngmt

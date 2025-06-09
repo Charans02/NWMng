@@ -12,10 +12,10 @@ const Hero = () => {
             <Image
               src="/images/truck_no_bg.png"
               alt="Trash Lion truck"
-              width={553}
-              height={737}
+              width={653}
+              height={837}
               quality={100}
-              className="mx-auto w-full max-w-[280px] scale-x-[1] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
+              className="mx-auto w-full max-w-[680px] scale-x-[1] object-contain md:max-w-[740px] lg:max-w-[820px] xl:max-w-[900px]"
               priority
             />
           </div>

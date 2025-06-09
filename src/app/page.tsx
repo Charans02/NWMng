@@ -21,11 +21,11 @@ export default function Home() {
       <div className="mt-[-165px] md:mt-[-70.84px] xl:mt-[-130px] xl:px-[60px]">
         <JunkRemovalQuote />
       </div>
+      <States />
       <Banner />
       {/* <Services /> */}
       {/* <Comparison /> */}
       <Story />
-      <States />
       <Testimonials />
       <Banner />
       {/* <WhyChoose /> */}
