@@ -28,7 +28,7 @@ const Hero = () => {
                 15 YARD DUMPSTER
               </span>
               <br />
-              12&apos;L X 7.5&apos;L X 5&apos;L
+              14&apos;L X 7.5&apos;W X 4.5&apos;H
             </Text>
             <Text className="text-center text-[16px] leading-[23px] md:text-left md:text-[18px] lg:text-left lg:text-[21px] lg:leading-[26px] xl:text-left">
               <span className="leading-[33px] font-bold">

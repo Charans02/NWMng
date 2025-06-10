@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 const bulletPoints = [
   "3 Days included, then $19.99/Day",
-  "2000LBS Included. Additional Weight Billed @ $0.06/Lb",
+  "1000LBS Included. Additional Weight Billed @ $0.06/Lb",
   "Great For Medium Projects, Clean-Outs, And Fire/Flood Restoration",
   "Hassle Free Rental, Straight To Your Doorstep",
 ];
@@ -24,8 +24,10 @@ const States = () => {
             className="object-cover object-center"
           />
           <div className="absolute bottom-[0px] flex h-[80px] w-full items-center justify-center bg-lime-700">
-            <p className="font-[family-name:var(--font-lato-sans)] text-[18px] md:text-[30px] md:leading-[60px] font-semibold text-white">
-              15 yards dumpster
+            <p className="font-[family-name:var(--font-lato-sans)] text-[18px] md:text-[30px] md:leading-[60px] font-semibold text-white flex items-center gap-2">
+              15 yard dumpster – 
+              <span className="text-white font-bold">$300</span>
+              <span className="text-white/70 line-through">$400</span>
             </p>
           </div>
         </div>
