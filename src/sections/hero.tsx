@@ -37,7 +37,7 @@ const Hero = () => {
               {/* <br /> */}
               <span className="hidden">From clean outs to residential junk hauling.</span>
               <br />
-              Fire/Food restoration.
+              Fire/Flood restoration.
             </Text>
             <div
               className="scrollbar-hide flex w-full max-w-full items-center justify-center md:justify-start gap-1.5 overflow-x-auto py-2 whitespace-nowrap sm:gap-2.5 lg:gap-5 lg:py-3"

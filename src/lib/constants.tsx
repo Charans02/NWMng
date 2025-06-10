@@ -89,21 +89,21 @@ export const SERVICES: ServiceType[] = [
 export const TESTIMONIALS: TestimonialType[] = [
   {
     avatar: "/images/avatar.jpg",
-    name: "Local Customer, Florida",
+    name: "Ryan G",
     content:
       "They are so friendly and helped me pick out the perfect dumpster for the job.We are glad we picked Nw Mngmt Dumpsters and will be using them again the next time we need a dumpster rental. You wont be disappointed!",
     rating: 5,
   },
   {
     avatar: "/images/avatar.jpg",
-    name: "Customer, Florida",
+    name: "Sarah H",
     content:
       "They made my life super easy! Ive been needing a dumpster for a long time.  but have not rented one yet due to not knowing the correct size and pricing, they are not only affordable, but came right when I asked. They came earlier  in the day for me and I got it all done in one day!",
     rating: 5,
   },
   {
     avatar: "/images/avatar.jpg",
-    name: "Local Customer, Florida",
+    name: "Brett T",
     content:
       "They are amazing to work with. I never rented a dumpster so I was little confused he answered all of my questions and kept in contact with me every step of the way. Great pricing and very reliable. I highly recommend renting from Nw Mngmt dumpsters.",
     rating: 5,

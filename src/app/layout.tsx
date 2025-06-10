@@ -20,8 +20,8 @@ const soraSans = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "NW Mngmt | Florida's #1 Top Rated Junk Removal Team",
-  description: "Florida's #1 Top Rated Junk Removal Team",
+  title: "NW Mngmt | 15 YARD DUMPSTER Rental",
+  description: "15 YARD DUMPSTER Rental",
 };
 
 export default function RootLayout({
