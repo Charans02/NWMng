@@ -1,9 +1,9 @@
 import {
   Facebook,
-  Instagram,
+  // Instagram,
   // Twitter,
   // Youtube,
-  Mail,
+  // Mail,
   MapPin,
   Phone,
 } from "lucide-react";
@@ -11,15 +11,10 @@ import { ServiceType, TestimonialType, Expert, ComparisonSet, JunkRemovalType, C
 
 export const CONTACT_INFO = [
   {
-    name: "Email",
-    icon: <Mail size={16} className="stroke-foreground fill-background" />,
-    value: "Trash.lion.llc@gmail.com",
-  },
-  {
     name: "Address",
 
     icon: <MapPin size={16} className="stroke-foreground fill-background" />,
-    value: "Philadelphia , Pa",
+    value: "Florida , USA",
   },
   {
     name: "Phone",
@@ -29,11 +24,11 @@ export const CONTACT_INFO = [
 ];
 
 export const SOCIAL_LINKS = [
-  {
-    name: "Instagram",
-    icon: <Instagram size={24} />,
-    url: "/",
-  },
+  // {
+  //   name: "Instagram",
+  //   icon: <Instagram size={24} />,
+  //   url: "/",
+  // },
   // {
   //   name: "Twitter",
   //   icon: <Twitter size={24} />,
@@ -42,7 +37,7 @@ export const SOCIAL_LINKS = [
   {
     name: "Facebook",
     icon: <Facebook size={24} />,
-    url: "/",
+    url: "https://www.facebook.com/profile.php?id=61575312555583",
   },
   // {
   //   name: "Youtube",
@@ -57,17 +52,17 @@ export const QUICK_LINKS = [
     url: "#story",
   },
   {
-    name: "Hire",
+    name: "Hire Us",
     url: "#states",
   },
   {
     name: "Reviews",
     url: "#testimonials",
   },
-  {
-    name: "Contact Us",
-    url: "#contact",
-  },
+  // {
+  //   name: "Contact Us",
+  //   url: "#contact",
+  // },
 ];
 
 export const SERVICES: ServiceType[] = [
@@ -93,24 +88,24 @@ export const SERVICES: ServiceType[] = [
 
 export const TESTIMONIALS: TestimonialType[] = [
   {
-    avatar: "/images/avatar_1.png",
-    name: "Pedro Beatty",
+    avatar: "/images/avatar.jpg",
+    name: "Local Customer, Florida",
     content:
-      "Needed appliances removed out of a property I had, (refrigerator, oven, washer and, dryer). Trash Lion came out had them removed quickly. Will definitely use them again and refer to my friends that need junk removed.",
+      "They are so friendly and helped me pick out the perfect dumpster for the job.We are glad we picked Nw Mngmt Dumpsters and will be using them again the next time we need a dumpster rental. You wont be disappointed!",
     rating: 5,
   },
   {
-    avatar: "/images/avatar_2.png",
-    name: "Justin Gerhold Jr.",
+    avatar: "/images/avatar.jpg",
+    name: "Customer, Florida",
     content:
-      "My tenant moved out of my property, needed to get all the old furniture out of the apartment. Trash Lion had it done in a day.",
+      "They made my life super easy! Ive been needing a dumpster for a long time.  but have not rented one yet due to not knowing the correct size and pricing, they are not only affordable, but came right when I asked. They came earlier  in the day for me and I got it all done in one day!",
     rating: 5,
   },
   {
-    avatar: "/images/avatar_3.png",
-    name: "Rufus Mohr",
+    avatar: "/images/avatar.jpg",
+    name: "Local Customer, Florida",
     content:
-      "Had a very easy time working with him. I needed my garage cleaned out before the holidays. The owner came out on the weekend, got it all done in a timely manner and left my garage looking great.",
+      "They are amazing to work with. I never rented a dumpster so I was little confused he answered all of my questions and kept in contact with me every step of the way. Great pricing and very reliable. I highly recommend renting from Nw Mngmt dumpsters.",
     rating: 5,
   },
 ];
@@ -255,18 +250,18 @@ export const COMPARISON_SETS: ComparisonSet[] = [
 export const JUNK_REMOVAL_IMAGES: JunkRemovalType[] = [
   {
     id: 1,
-    img_url: "/images/junk_remove.png",
+    img_url: "/images/junk_remove.jpg",
     img_name: "Junk Removal 1",
 
   },
   {
     id: 2,
-    img_url: "/images/junk_remove.png",
+    img_url: "/images/junk_remove.jpg",
     img_name: "Junk Removal 2",
   },
   {
     id: 3,
-    img_url: "/images/junk_remove.png",
+    img_url: "/images/junk_remove.jpg",
     img_name: "Junk Removal 3",
   },
 ];

@@ -15,9 +15,7 @@ const Footer = () => {
                 NW<span className="text-lime-600"> Mngmt</span>
               </Text>
               <Text className="mt-4">
-                We take on jobs ranging from, junk removal, house/yard clean
-                outs, construction removal, demolition, and even boat and RV,
-                auto removal. We are open 24/7 ready to get any job done!
+                The right size, the right price — NW Mngmt makes dumpster rentals simple, affordable, and stress-free. From cleanouts to renovations, we deliver the perfect fit right to your doorstep.
               </Text>
               <div className="mt-8 flex gap-8">
                 {SOCIAL_LINKS.map((link) => (

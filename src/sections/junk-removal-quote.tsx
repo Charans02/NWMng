@@ -113,7 +113,7 @@ const JunkRemovalQuote = () => {
           >
             <CircleArrowIcon />
             <span className="text-nowrap">
-              {loading ? "Sending..." : "Submit"}
+              {loading ? "Sending..." : "Add to Rental Order"}
             </span>
           </button>
         </form>

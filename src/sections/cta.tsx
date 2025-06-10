@@ -23,23 +23,13 @@ const CTA = () => {
           </p>
           <div className="flex flex-col-reverse items-center justify-center gap-1 md:flex-row md:gap-16">
             <div className="flex items-center gap-4 xl:gap-5">
-              <Mail
-                fill="white"
-                stroke="#6B8E23"
-                className="size-6 sm:size-8 lg:size-9"
-              />
-              <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[30px] font-semibold sm:text-[20px] sm:leading-[50px] xl:text-[25px] xl:leading-[63px]">
-                {CONTACT_INFO[0].value}
-              </p>
-            </div>
-            <div className="flex items-center gap-4 xl:gap-5">
               <PhoneCall
                 fill="white"
                 stroke="none"
                 className="size-5 sm:size-7 lg:size-8"
               />
               <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[30px] sm:text-[20px] sm:leading-[50px] xl:leading-[63px]">
-                {CONTACT_INFO[2].value}
+                {CONTACT_INFO[1].value}
               </p>
             </div>
           </div>

@@ -12,7 +12,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          10+ years of experience
+          Cleanups and Move-Outs
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -22,7 +22,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          Get your free quote
+          Residential Renovations
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -32,7 +32,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          10+ years of experience
+          Perfect for Medium Projects
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -42,7 +42,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          Get your free quote
+          Cleanups and Move-Outs
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -52,7 +52,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          10+ years of experience
+          Residential Renovations
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -62,7 +62,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          Get your free quote
+          Perfect for Medium Projects
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -72,7 +72,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          10+ years of experience
+          Cleanups and Move-Outs
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -82,7 +82,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          Get your free quote
+          Residential Renovations
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -92,7 +92,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          10+ years of experience
+          Perfect for Medium Projects
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -102,7 +102,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          Get your free quote
+          Cleanups and Move-Outs
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -112,7 +112,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          10+ years of experience
+          Residential Renovations
         </p>
         <Image
           src="/svgs/sparkles.svg"
@@ -122,7 +122,7 @@ const Banner = () => {
           className="size-[22px] lg:size-[30px] xl:size-[50px]"
         />
         <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[20px] font-semibold whitespace-nowrap lg:text-[22px] lg:leading-[27px] xl:text-[36px] xl:leading-[46px]">
-          Get your free quote
+          Perfect for Medium Projects
         </p>
       </div>
     </div>

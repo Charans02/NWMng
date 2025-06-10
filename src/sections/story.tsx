@@ -28,18 +28,16 @@ const Story = () => {
         <div className="flex w-full flex-col items-center gap-8">
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[28px] leading-[44px] font-normal uppercase lg:text-left">
             <span className="text-lime-500 font-extrabold">NW Mngmt, </span>
-            promise to Florida
+            Best and Reliable Service
           </p>
           <p className="text-center font-[family-name:var(--font-lato-sans)] text-[18px] leading-[34px] font-normal lg:text-left">
             <span className="font-bold text-[#6B8E23]">
-              Keeping Your Home And Philadelphia A Cleaner Place.
+              Keeping Your Demands sattisfied.
             </span>
             <br />
             <br />
             <span>
-              We are always here when you need unwanted junk gone. We aim to
-              make the process easy for you and to treat you like a part of the
-              trash lion family every step of the way.
+              Need a reliable dumpster for your next project? NW Mngmt offers 15-yard dumpster rentals — perfect for cleanouts, renovations, move-outs, and disaster recovery.
             </span>
             <div className="mx-auto flex flex-row items-center justify-center gap-2 py-5">
               {JUNK_REMOVAL_IMAGES.map((item) => (
@@ -54,9 +52,7 @@ const Story = () => {
               ))}
             </div>
             <span>
-              With 10+ Years of experience and 3 trash trucks we always can get
-              the job right the first time. From boats to rvs, to any junk you
-              need removed from your home or business we are here for you,
+              With dimensions of 12' x 7.5' x 5', it's ideal for medium-sized jobs. Each rental includes 3 days and 2000lbs of disposal — with additional days at just $19.99/day and excess weight billed at $0.06/lb. Enjoy a hassle-free experience with fast delivery, flexible terms, and friendly service — right at your doorstep.
             </span>
           </p>
           <button className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">
@@ -68,7 +64,7 @@ const Story = () => {
               />
             </div>
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
-              Get my junk gone
+              Add to Rental Order
             </p>
           </button>
         </div>

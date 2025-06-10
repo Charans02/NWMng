@@ -51,8 +51,7 @@ const Experts = () => {
                 </Text>
               </div>
               <p className="hidden max-w-[478px] text-center font-[family-name:var(--font-sora-sans)] text-[19px] leading-[30px] sm:block xl:text-left">
-                What&apos;s stopping your dreams from becoming a reality. Trash
-                Lion will get your area looking right.
+                Big enough for your project. Small enough to fit your driveway. Delivered with zero hassle — that&apos;s the NW Mngmt promise.
               </p>
             </div>
 

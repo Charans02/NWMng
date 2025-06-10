@@ -1,5 +1,13 @@
 import Image from "next/image";
 import { Text } from "@/components/ui";
+import { CheckCircle } from "lucide-react";
+
+const bulletPoints = [
+  "3 Days included, then $19.99/Day",
+  "2000LBS Included. Additional Weight Billed @ $0.06/Lb",
+  "Great For Medium Projects, Clean-Outs, And Fire/Flood Restoration",
+  "Hassle Free Rental, Straight To Your Doorstep",
+];
 
 const States = () => {
   return (
@@ -17,28 +25,39 @@ const States = () => {
           />
           <div className="absolute bottom-[0px] flex h-[80px] w-full items-center justify-center bg-lime-700">
             <p className="font-[family-name:var(--font-lato-sans)] text-[18px] md:text-[30px] md:leading-[60px] font-semibold text-white">
-              15 foot dumpster
+              15 yards dumpster
             </p>
           </div>
         </div>
+
         <div className="flex w-full flex-col items-center xl:max-w-full xl:items-start order-1">
           <Text
             variant="h2"
             className="max-w-[467px] text-center md:max-w-full xl:text-left"
           >
-            Your Junk Removal Solution,
+            Your Rental Solution,
             <span className="text-lime-500"> NW Mngmt!</span>
           </Text>
-          <Text className="mt-6 max-w-[516px] text-center text-[#525252] md:max-w-full xl:text-left">
-            Whether you are looking for a small junk removal job or a whole
-            house clean-out, NW Mngmt can get it done. We are open 24/7 always
-            taking call and new customers.
-          </Text>
 
-          {/* Big Centered Hire Us Button */}
+          {/* Bullet Points */}
+          <ul className="mt-6 space-y-4 text-[#525252]">
+            {bulletPoints.map((point, idx) => (
+              <li
+                key={idx}
+                className="flex items-start gap-3 text-[24px] leading-snug xl:text-left"
+              >
+                <span className="relative top-[2px]">
+                  <CheckCircle className="text-lime-600" size={26} />
+                </span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+
+          {/* Button */}
           <div className="w-full mt-10 flex justify-center xl:justify-start">
-            <button className="w-72 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition">
-              Rent Our Dumpster
+            <button className="w-92 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition">
+              ADD TO RENTAL ORDER
             </button>
           </div>
         </div>
