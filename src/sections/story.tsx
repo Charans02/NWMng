@@ -52,7 +52,7 @@ const Story = () => {
               ))}
             </div>
             <span>
-              With dimensions of 12' x 7.5' x 5', it's ideal for medium-sized jobs. Each rental includes 3 days and 2000lbs of disposal — with additional days at just $19.99/day and excess weight billed at $0.06/lb. Enjoy a hassle-free experience with fast delivery, flexible terms, and friendly service — right at your doorstep.
+              With dimensions of 12&apos; x 7.5&apos; x 5&apos;, it's ideal for medium-sized jobs. Each rental includes 3 days and 2000lbs of disposal — with additional days at just $19.99/day and excess weight billed at $0.06/lb. Enjoy a hassle-free experience with fast delivery, flexible terms, and friendly service — right at your doorstep.
             </span>
           </p>
           <button className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">

@@ -9,7 +9,7 @@ import {
   // WhyChoose,
   Experts,
   // ServiceAreas,
-  Contact,
+  // Contact,
   CTA,
   JunkRemovalQuote,
 } from "@/sections";

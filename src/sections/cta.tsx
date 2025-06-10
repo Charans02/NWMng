@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail, PhoneCall } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 
 import { CONTACT_INFO } from "@/lib/constants";
 
