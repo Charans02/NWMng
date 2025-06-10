@@ -17,6 +17,7 @@ const JunkRemovalQuote = () => {
     name: "",
     email: "",
     phone: "",
+    address: "",
     message: "",
   });
   const [loading, setLoading] = useState(false);
@@ -38,6 +39,7 @@ const JunkRemovalQuote = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
+        address: formData.address,
         message: formData.message,
         isQuoteRequest: true,
       };
@@ -45,7 +47,7 @@ const JunkRemovalQuote = () => {
       const result = await sendEmail(data);
 
       if (result.success) {
-        setFormData({ name: "", email: "", phone: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", address: "", message: "" });
         toast.success(
           "Thank you for your quote request! We will contact you shortly.",
         );
@@ -94,6 +96,13 @@ const JunkRemovalQuote = () => {
             fieldName="Phone Number"
             name="phone"
             value={formData.phone}
+            onChange={handleChange}
+          />
+          <Field
+            svg={<InformationIcon />}
+            fieldName="Address"
+            name="address"
+            value={formData.address}
             onChange={handleChange}
           />
           <Field

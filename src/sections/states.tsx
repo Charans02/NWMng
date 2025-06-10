@@ -55,11 +55,11 @@ const States = () => {
           </ul>
 
           {/* Button */}
-          <div className="w-full mt-10 flex justify-center xl:justify-start">
+          {/* <div className="w-full mt-10 flex justify-center xl:justify-start">
             <button className="w-92 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition">
               ADD TO RENTAL ORDER
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
