@@ -60,7 +60,11 @@ const Story = () => {
             className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
             onClick={() => {
               const phone = "+18135790912";
-              window.open(`tel:${phone}`, "_self");
+              if (typeof window !== "undefined" && typeof window.gtagSendEvent === "function") {
+                window.gtagSendEvent(`tel:${phone}`);
+              } else {
+                window.location.href = `tel:${phone}`; // fallback
+              }
             }}
           >
             <div className="relative">

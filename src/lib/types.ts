@@ -40,3 +40,9 @@ export interface Customer {
   avatar_url: string;
   name: string;
 }
+
+declare global {
+  interface Window {
+    gtagSendEvent?: (url: string) => void;
+  }
+}

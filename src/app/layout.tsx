@@ -47,6 +47,27 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* ✅ Add this helper to track and then redirect */}
+        <Script id="gtag-helper" strategy="afterInteractive">
+          {`
+            window.gtagSendEvent = function(url) {
+              var callback = function () {
+                if (typeof url === 'string') {
+                  window.location.href = url;
+                }
+              };
+              if (window.gtag) {
+                window.gtag('event', 'ads_conversion_phone_call_lead2', {
+                  event_callback: callback,
+                  event_timeout: 2000
+                });
+              } else {
+                callback(); // fallback if gtag not loaded
+              }
+            };
+          `}
+        </Script>
+
         <Header />
         <main className="overflow-hidden">{children}</main>
         <Footer />

@@ -152,7 +152,11 @@ const Header = () => {
               className="group bg-lime-600 hover:text-lime-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
               onClick={() => {
                 const phone = "+18135790912";
-                window.open(`tel:${phone}`, "_self");
+                if (typeof window !== "undefined" && typeof window.gtagSendEvent === "function") {
+                  window.gtagSendEvent(`tel:${phone}`);
+                } else {
+                  window.location.href = `tel:${phone}`; // fallback
+                }
               }}
             >
               <div className="relative">
