@@ -100,6 +100,8 @@ const Hero = () => {
                 </Text>
               </div>
             </div>
+            {/* Add spacing here */}
+            <div className="h-8 md:h-10" />
             <a
               href="tel:+18135790912"
               target="_blank"
