@@ -75,7 +75,7 @@ const Story = () => {
               />
             </div>
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
-              Add to Rental Order
+              Click to Call Us
             </p>
           </button>
         </div>
