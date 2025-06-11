@@ -35,7 +35,7 @@ export async function sendEmail(data: ContactEmailForm) {
       : ContactFormEmail({ name, email, message, phone });
 
     const result = await resend.emails.send({
-      from: 'Trash Lion <contact@trashlion.com>',
+      from: 'NW Mngmt <nwmanagement14@gmail.com>',
       to: to,
       subject: emailSubject,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,

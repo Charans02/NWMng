@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
@@ -55,7 +56,13 @@ const Story = () => {
               With dimensions of 14&apos; x 7.5&apos; x 4.5&apos;, it&apos;s ideal for medium-sized jobs. Each rental includes 3 days and 1000lbs of disposal — with additional days at just $19.99/day and excess weight billed at $0.06/lb. Enjoy a hassle-free experience with fast delivery, flexible terms, and friendly service — right at your doorstep.
             </span>
           </p>
-          <button className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">
+          <button 
+            className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
+            onClick={() => {
+              const phone = "+18135790912";
+              window.open(`tel:${phone}`, "_self");
+            }}
+          >
             <div className="relative">
               <MessageCircle size={24} />
               <Phone

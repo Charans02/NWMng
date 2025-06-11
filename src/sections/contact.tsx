@@ -125,7 +125,7 @@ const Contact = () => {
                 name="email"
                 type="email"
                 className="focus:outline-lime-500 w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
-                placeholder="Ryan@trashlion.com"
+                placeholder="nwmanagement14@gmail.com"
                 required
               />
             </div>
