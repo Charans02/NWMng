@@ -148,16 +148,11 @@ const Header = () => {
                 813 - 579 - 0912
               </p>
             </div>
-            <button
+            <a
+              href="tel:+18135790912"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group bg-lime-600 hover:text-lime-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
-              onClick={() => {
-                const phone = "+18135790912";
-                if (typeof window !== "undefined" && typeof window.gtagSendEvent === "function") {
-                  window.gtagSendEvent(`tel:${phone}`);
-                } else {
-                  window.location.href = `tel:${phone}`; // fallback
-                }
-              }}
             >
               <div className="relative">
                 <MessageCircle size={24} />
@@ -169,7 +164,7 @@ const Header = () => {
               <p className="hidden font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold lg:block">
                 Contact Us
               </p>
-            </button>
+            </a>
           </div>
         </div>
       ) : (

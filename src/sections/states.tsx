@@ -59,19 +59,14 @@ const States = () => {
 
           {/* Button */}
           <div className="w-full mt-10 flex justify-center xl:justify-start">
-            <button 
-              className="w-92 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition"
-                onClick={() => {
-                const phone = "+18135790912";
-                if (typeof window !== "undefined" && typeof window.gtagSendEvent === "function") {
-                  window.gtagSendEvent(`tel:${phone}`);
-                } else {
-                  window.location.href = `tel:${phone}`; // fallback
-                }
-              }}
+            <a
+              href="tel:+18135790912"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-92 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition text-center inline-block"
             >
               CLICK TO CALL US
-            </button>
+            </a>
           </div>
         </div>
       </section>

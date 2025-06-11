@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CalendarRange, Truck, Globe } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
 import { CUSTOMERS } from "@/lib/constants";
 
@@ -99,6 +100,23 @@ const Hero = () => {
                 </Text>
               </div>
             </div>
+            <a
+              href="tel:+18135790912"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
+            >
+              <div className="relative">
+                <MessageCircle size={24} />
+                <Phone
+                  size={10}
+                  className="group-hover:fill-lime-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
+                />
+              </div>
+              <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
+                Click to Call Us
+              </p>
+            </a>
           </div>
         </section>
       </div>
