@@ -40,28 +40,25 @@ const Hero = () => {
               <br />
               cleanouts, renovations, and disaster recovery.
             </Text>
-            <div
-              className="scrollbar-hide flex w-full max-w-full items-center justify-center md:justify-start gap-1.5 overflow-x-auto py-2 whitespace-nowrap sm:gap-2.5 lg:gap-5 lg:py-3"
-              style={{ msOverflowStyle: "none", scrollbarWidth: "none" }}
-            >
-              <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2.5">
-                {/* <CalendarRange className="size-3 sm:size-3.5 lg:size-4 xl:size-6" /> */}
-                <Text className="text-[12px] leading-[12px] font-semibold sm:text-[12px] sm:leading-[13px] md:text-[14px] md:leading-[15px] lg:text-[16px] lg:leading-[24px] xl:text-[17px]">
-                No Hidden Fees
-                </Text>
+            <div className="flex flex-col gap-2 md:gap-1">
+              <div className="flex items-center justify-center md:justify-start gap-1.5 sm:gap-2.5 lg:gap-5">
+                <div className="flex items-center gap-1.5 sm:gap-3">
+                  <Text className="text-[15px] leading-[16px] font-semibold sm:text-[16px] sm:leading-[18px] md:text-[17px] md:leading-[20px] lg:text-[18px] lg:leading-[20px] xl:text-[20px]">
+                    No Hidden Fees
+                  </Text>
+                </div>
+                <div className="bg-background h-4 w-px sm:h-5 lg:h-9" />
+                <div className="flex items-center gap-1.5 sm:gap-15">
+                  <Text className="text-[15px] leading-[16px] font-semibold sm:text-[16px] sm:leading-[18px] md:text-[17px] md:leading-[20px] lg:text-[18px] lg:leading-[20px] xl:text-[20px]">
+                    Flexible rental times
+                  </Text>
+                </div>
+                <div className="bg-background h-4 w-px sm:h-5 lg:h-9" />
               </div>
-              <div className="bg-background h-4 w-px flex-shrink-0 sm:h-5 lg:h-9" />
-              <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2.5">
-                {/* <Truck className="size-3 sm:size-3.5 lg:size-4 xl:size-6" /> */}
-                <Text className="text-[12px] leading-[12px] font-semibold sm:text-[12px] sm:leading-[13px] md:text-[14px] md:leading-[15px] lg:text-[16px] lg:leading-[24px] xl:text-[17px]">
-                Flexible rental times
-                </Text>
-              </div>
-              <div className="bg-background h-4 w-px flex-shrink-0 sm:h-5 lg:h-9" />
-              <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2.5">
-                {/* <Globe className="size-3 sm:size-3.5 lg:size-4 xl:size-6" /> */}
-                <Text className="text-[12px] leading-[12px] font-semibold sm:text-[12px] sm:leading-[13px] md:text-[14px] md:leading-[15px] lg:text-[16px] lg:leading-[24px] xl:text-[17px]">
-                Same-day delivery
+
+              <div className="flex items-center justify-center md:justify-start">
+                <Text className="text-[15px] leading-[16px] font-semibold sm:text-[16px] sm:leading-[18px] md:text-[17px] md:leading-[20px] lg:text-[18px] lg:leading-[20px] xl:text-[20px]">
+                  Same-day delivery
                 </Text>
               </div>
             </div>
@@ -76,6 +73,12 @@ const Hero = () => {
                 priority
               />
             </div>
+            <Text className="text-center text-[18px] leading-[28px] text-lime-500 md:text-left md:text-[22px] lg:text-left lg:text-[26px] lg:leading-[30px] xl:text-left">
+                <span className="leading-[33px] font-bold">
+                  $50 Off For New Customers
+                </span>
+            </Text>
+            <div className="h-5" />
             <div className="customers-container flex w-full items-center justify-center md:justify-between gap-3 rounded-full border-none py-2 px-2 sm:w-fit sm:justify-around ">
               <div className="flex items-center gap-0 sm:gap-3 md:gap-1 lg:gap-3">
                 {
