@@ -70,7 +70,7 @@ const Story = () => {
               />
             </div>
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
-              Click to Call Us
+              Reserve Your Dumpster
             </p>
           </a>
         </div>

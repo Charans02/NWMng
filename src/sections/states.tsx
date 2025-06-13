@@ -65,7 +65,7 @@ const States = () => {
               rel="noopener noreferrer"
               className="w-92 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition text-center inline-block"
             >
-              CLICK TO CALL US
+              Reserve Your Dumpster
             </a>
           </div>
         </div>
