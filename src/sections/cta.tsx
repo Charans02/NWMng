@@ -27,14 +27,14 @@ const CTA = () => {
       {/* Sticky Button appears after Hero scroll */}
       {showSticky && (
         <div className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 w-full max-w-sm px-4 pb-[env(safe-area-inset-bottom,1rem)]">
-          <a
+          {/* <a
             href="tel:+18135790912"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full rounded-full bg-lime-600 px-6 py-4 text-center text-white font-bold shadow-lg hover:bg-lime-700 transition"
           >
             Reserve Your Dumpster
-          </a>
+          </a> */}
         </div>
       )}
 

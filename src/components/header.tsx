@@ -85,12 +85,26 @@ const Header = () => {
             </Link>
           </div>
 
-          <button
-            className="hover:text-lime-600 col-start-1 block cursor-pointer transition-colors xl:hidden"
-            onClick={handleClick}
-          >
-            <AlignJustify className="size-8" />
-          </button>
+          <div className="col-start-1 flex items-center ml-15 gap-0.5 xl:hidden">
+            <a
+              href="tel:+18135790912"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 rounded-full bg-lime-600 px-1 py-0.5 text-sm font-[family-name:var(--font-sora-sans)] text-white shadow-md transition hover:bg-lime-700"
+              aria-label="Reserve Your Dumpster"
+            >
+              <Phone size={18} />
+              <span className="font-bold">Reserve Your Dumpster</span>
+            </a>
+
+            <button
+              className="hover:text-lime-500 cursor-pointer transition-colors"
+              onClick={handleClick}
+              aria-label="Menu"
+            >
+              <AlignJustify className="size-8" />
+            </button>
+          </div>
 
           <Link
             href="#"
