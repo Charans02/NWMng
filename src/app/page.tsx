@@ -9,9 +9,9 @@ import {
   // WhyChoose,
   Experts,
   // ServiceAreas,
-  // Contact,
+  Contact,
   CTA,
-  // JunkRemovalQuote,
+  JunkRemovalQuote,
 } from "@/sections";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Hero />
       <States />
-      {/* <JunkRemovalQuote /> */}
+      <JunkRemovalQuote />
       <Banner />
       {/* <Services /> */}
       {/* <Comparison /> */}
@@ -29,7 +29,7 @@ export default function Home() {
       {/* <WhyChoose /> */}
       <Experts />
       {/* <ServiceAreas /> */}
-      {/* <Contact /> */}
+      <Contact />
       <CTA />
     </>
   );

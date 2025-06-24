@@ -72,7 +72,7 @@ const Contact = () => {
         </div>
         <div className="flex w-full flex-1 flex-col items-center gap-4 rounded-2xl bg-white p-8 shadow">
           <p className="text-lime-700 mb-8 text-center font-[family-name:var(--font-sora-sans)] text-[40px] leading-[40px] font-semibold xl:text-left">
-            Reach out to Trash Lion!
+            Reach out to NW Mngmt!
           </p>
           <form
             className="w-full"
@@ -134,7 +134,7 @@ const Contact = () => {
               <input
                 name="phone"
                 className="focus:outline-lime-500 w-full rounded-2xl border-[2px] border-[#989898] p-4 font-[family-name:var(--font-lato-sans)]"
-                placeholder="738-655-4789"
+                placeholder="813-579-0912"
                 required
               />
             </div>
