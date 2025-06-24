@@ -46,3 +46,9 @@ declare global {
     gtagSendEvent?: (url: string) => void;
   }
 }
+
+declare global {
+  interface Window {
+    dataLayer: Record<string, any>[];
+  }
+}
