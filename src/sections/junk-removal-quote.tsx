@@ -14,11 +14,6 @@ import {
 import { sendEmail } from "@/app/actions";
 
 // Declare global window.dataLayer to satisfy TypeScript
-declare global {
-  interface Window {
-    dataLayer: Record<string, unknown>[];
-  }
-}
 
 const JunkRemovalQuote = () => {
   const [formData, setFormData] = useState({
@@ -70,6 +65,9 @@ const JunkRemovalQuote = () => {
           event: "form_submission",
           form_name: "Quote Form",
         });
+
+        // ✅ Redirect to thank-you page
+        window.location.href = "/thank-you";
       }
 
       // if (result.error) {

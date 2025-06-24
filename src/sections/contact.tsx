@@ -109,6 +109,9 @@ const Contact = () => {
                       event: "form_submission",
                       form_name: "Contact Form",
                     });
+
+                    // ✅ Redirect to thank-you page
+                    window.location.href = "/thank-you";
                   }
 
                   // if (result.error) {

@@ -35,7 +35,7 @@ export async function sendEmail(data: ContactEmailForm) {
       : ContactFormEmail({ name, email, message, phone });
 
     const result = await resend.emails.send({
-      from: 'NW Mngmt <nwmanagement14@gmail.com>',
+      from: 'NW Mngmt <contact@leadforgers.com>',
       to: to,
       subject: emailSubject,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
