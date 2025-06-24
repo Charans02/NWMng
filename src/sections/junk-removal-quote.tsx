@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Head from "next/head";
+import Script from "next/script";
 import { toast } from "sonner";
 import Field from "@/components/Field";
 import {
@@ -12,6 +12,13 @@ import {
   User,
 } from "@/components/svgs";
 import { sendEmail } from "@/app/actions";
+
+// Declare global window.dataLayer to satisfy TypeScript
+declare global {
+  interface Window {
+    dataLayer: Record<string, unknown>[];
+  }
+}
 
 const JunkRemovalQuote = () => {
   const [formData, setFormData] = useState({
@@ -59,7 +66,6 @@ const JunkRemovalQuote = () => {
           "Thank you for your quote request! We will contact you shortly.",
         );
 
-        // Push to GTM
         window.dataLayer?.push({
           event: "form_submission",
           form_name: "Quote Form",
@@ -85,23 +91,20 @@ const JunkRemovalQuote = () => {
 
   return (
     <>
-      <Head>
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=GTM-5B25RRH6"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'GTM-5B25RRH6');
-            `,
-          }}
-        />
-      </Head>
+      {/* GTM Scripts via next/script */}
+      <Script
+        id="gtm-src"
+        src="https://www.googletagmanager.com/gtag/js?id=GTM-5B25RRH6"
+        strategy="afterInteractive"
+      />
+      <Script id="gtm-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GTM-5B25RRH6');
+        `}
+      </Script>
 
       <div className="z-100 mx-auto min-w-[247.68px] px-[20px] md:px-[35px] lg:max-w-[1392px] lg:px-[60px] xl:px-0">
         <div className="bg-gradient-to-r from-lime-600 via-lime-500 to-lime-400 mx-auto rounded-[19.38px] px-[19.84px] pt-[20px] pb-[12px] text-white md:px-[19.84px] md:py-[21.04px] xl:rounded-[35px] xl:px-[35.84px] xl:py-[38px]">
@@ -112,7 +115,6 @@ const JunkRemovalQuote = () => {
             onSubmit={handleSubmit}
             className="flex flex-col items-center justify-center gap-[14px] md:flex-row md:flex-wrap md:gap-[7.4px] xl:gap-[11.4px]"
           >
-            {/* Fields */}
             <Field
               svg={<User />}
               fieldName="Name"
@@ -150,7 +152,6 @@ const JunkRemovalQuote = () => {
               isTextArea={false}
             />
 
-            {/* Button */}
             <button
               type="submit"
               disabled={loading}

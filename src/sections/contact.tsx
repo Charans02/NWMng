@@ -1,8 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Script from "next/script";
 import { useMemo, useState, useEffect } from "react";
-import Head from "next/head";
 import { LatLngTuple } from "leaflet";
 import { CircleChevronRight } from "lucide-react";
 import { Text } from "@/components/ui";
@@ -44,23 +44,19 @@ const Contact = () => {
 
   return (
     <>
-      <Head>
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=GTM-5B25RRH6"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'GTM-5B25RRH6');
-            `,
-          }}
-        />
-      </Head>
+      {/* Google Tag Manager */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=GTM-5B25RRH6"
+      />
+      <Script id="gtm-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GTM-5B25RRH6');
+        `}
+      </Script>
 
       <div className="bg-[#f3f3f3]">
         <section
@@ -119,7 +115,7 @@ const Contact = () => {
                     toast.error("Uh oh! Something went wrong.");
                     window.dataLayer?.push({
                       event: "form_error",
-                      form_name: "Quote Form",
+                      form_name: "Contact Form",
                     });
                   }
                 } catch (err) {
