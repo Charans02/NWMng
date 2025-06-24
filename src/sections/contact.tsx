@@ -111,13 +111,13 @@ const Contact = () => {
                     });
                   }
 
-                  if (result.error) {
-                    toast.error("Uh oh! Something went wrong.");
-                    window.dataLayer?.push({
-                      event: "form_error",
-                      form_name: "Contact Form",
-                    });
-                  }
+                  // if (result.error) {
+                  //   toast.error("Uh oh! Something went wrong.");
+                  //   window.dataLayer?.push({
+                  //     event: "form_error",
+                  //     form_name: "Contact Form",
+                  //   });
+                  // }
                 } catch (err) {
                   console.error(err);
                 } finally {

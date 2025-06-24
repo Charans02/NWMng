@@ -72,15 +72,15 @@ const JunkRemovalQuote = () => {
         });
       }
 
-      if (result.error) {
-        toast.error(
-          "There was a problem submitting your request. Please try again.",
-        );
-        window.dataLayer?.push({
-          event: "form_error",
-          form_name: "Quote Form",
-        });
-      }
+      // if (result.error) {
+      //   toast.error(
+      //     "There was a problem submitting your request. Please try again.",
+      //   );
+      //   window.dataLayer?.push({
+      //     event: "form_error",
+      //     form_name: "Quote Form",
+      //   });
+      // }
     } catch (err) {
       console.error(err);
       toast.error("An unexpected error occurred. Please try again later.");
