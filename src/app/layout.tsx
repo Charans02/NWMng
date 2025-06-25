@@ -32,45 +32,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${latoSans.variable} ${soraSans.variable} antialiased`}>
-        {/* Google Tag Manager */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17157168603"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
+      <head>
+        {/* Google Tag Manager - placed highest in <head> */}
+        <Script id="gtm-head" strategy="beforeInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17157168603');
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KQQBTWDX');
           `}
         </Script>
+      </head>
 
-        {/* ✅ Add this helper to track and then redirect */}
-        <Script id="gtag-helper" strategy="afterInteractive">
-          {`
-            window.gtagSendEvent = function(url) {
-              var callback = function () {
-                if (typeof url === 'string') {
-                  window.location.href = url;
-                }
-              };
-              if (window.gtag) {
-                window.gtag('event', 'ads_conversion_phone_call_lead2', {
-                  event_callback: callback,
-                  event_timeout: 2000
-                });
-              } else {
-                callback(); // fallback if gtag not loaded
-              }
-            };
-          `}
-        </Script>
+      <body className={`${latoSans.variable} ${soraSans.variable} antialiased`}>
+        {/* Google Tag Manager (noscript) - first in <body> */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KQQBTWDX"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
 
         <Header />
         <main className="overflow-hidden">{children}</main>
         <Footer />
+
         <Toaster
           position="top-right"
           toastOptions={{ style: { zIndex: 1000 } }}
