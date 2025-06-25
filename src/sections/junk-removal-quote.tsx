@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Script from "next/script";
 import { toast } from "sonner";
 import Field from "@/components/Field";
 import {
@@ -24,6 +23,9 @@ const JunkRemovalQuote = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+
+  // ✅ New: Form validity check
+  const isFormValid = Object.values(formData).every((val) => val.trim() !== "");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -87,23 +89,16 @@ const JunkRemovalQuote = () => {
     }
   };
 
+  const handleClick = () => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "client_button_click",
+      client: "nwmngmt",
+    });
+  };
+
   return (
     <>
-      {/* GTM Scripts via next/script */}
-      <Script
-        id="gtm-src"
-        src="https://www.googletagmanager.com/gtag/js?id=GTM-5B25RRH6"
-        strategy="afterInteractive"
-      />
-      <Script id="gtm-init" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'GTM-5B25RRH6');
-        `}
-      </Script>
-
       <div className="z-100 mx-auto min-w-[247.68px] px-[20px] md:px-[35px] lg:max-w-[1392px] lg:px-[60px] xl:px-0">
         <div className="bg-gradient-to-r from-lime-600 via-lime-500 to-lime-400 mx-auto rounded-[19.38px] px-[19.84px] pt-[20px] pb-[12px] text-white md:px-[19.84px] md:py-[21.04px] xl:rounded-[35px] xl:px-[35.84px] xl:py-[38px]">
           <h2 className="mb-[20px] text-center text-[16.6px] font-semibold md:text-[18.6px] xl:mb-[30px] xl:text-[33.6px]">
@@ -152,7 +147,8 @@ const JunkRemovalQuote = () => {
 
             <button
               type="submit"
-              disabled={loading}
+              disabled={loading || !isFormValid}
+              onClick={handleClick}
               className="flex w-full cursor-pointer flex-nowrap items-center justify-center gap-[3.49px] rounded-[17.47px] bg-[#000000] px-[20.61px] py-[18px] text-[16px] leading-[8.08px] font-[700] text-white disabled:opacity-70 md:w-fit md:gap-[4px] md:rounded-[27.68px] md:px-[10px] md:py-[13px] md:text-[14px] md:leading-[12.81px] xl:gap-[6px] xl:rounded-[50px] xl:px-[15px] xl:py-[21px] xl:text-[18px] xl:leading-[23.14px] 2xl:px-[30px]"
             >
               <CircleArrowIcon />
