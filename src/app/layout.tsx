@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className={`${latoSans.variable} ${soraSans.variable} antialiased`}>
         {/* Google Tag Manager */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-B9JNR106TQ"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17157168603"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
@@ -43,7 +43,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-B9JNR106TQ');
+            gtag('config', 'AW-17157168603');
           `}
         </Script>
 

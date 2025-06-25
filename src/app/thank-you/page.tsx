@@ -8,7 +8,7 @@ const ThankYouPage = () => {
     const params = new URLSearchParams(window.location.search);
     if (params.get("submitted") === "true" && window.gtag) {
       window.gtag("event", "conversion", {
-        send_to: "GTM-5B25RRH6", // 🔁 Replace with your actual Google Ads Conversion ID
+        send_to: "AW-17157168603", // 🔁 Replace with your actual Google Ads Conversion ID
       });
     }
   }, []);
@@ -18,7 +18,7 @@ const ThankYouPage = () => {
       {/* ✅ Load gtag.js if not already included globally */}
       <Script
         id="gtag-src"
-        src="https://www.googletagmanager.com/gtag/js?id=GTM-5B25RRH6"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17157168603"
         strategy="afterInteractive"
       />
       <Script id="gtag-init" strategy="afterInteractive">
@@ -26,7 +26,7 @@ const ThankYouPage = () => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'GTM-5B25RRH6'); // Replace with your Google Ads ID
+          gtag('config', 'AW-17157168603'); // Replace with your Google Ads ID
         `}
       </Script>
 
