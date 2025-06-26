@@ -59,14 +59,37 @@ const States = () => {
 
           {/* Button */}
           <div className="w-full mt-10 flex justify-center xl:justify-start">
-            <a
+            {/* <a
               href="tel:+18135790912"
               target="_blank"
               rel="noopener noreferrer"
               className="w-92 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition text-center inline-block"
+            > */}
+            <button
+              onClick={() => {
+                const target = document.getElementById("quote");
+                if (target) {
+                  const headerOffset = 160; // Adjust if needed
+                  const elementPosition = target.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                  });
+                }
+
+                // Optional: Track with GTM
+                // window.dataLayer = window.dataLayer || [];
+                // window.dataLayer.push({
+                //   event: "hero_cta_click",
+                //   section: "hero",
+                // });
+              }}
+              className="w-92 rounded-full bg-lime-600 px-10 py-5 text-xl font-semibold text-white shadow hover:bg-lime-700 transition text-center inline-block"
             >
               Reserve Your Dumpster
-            </a>
+            </button>
           </div>
         </div>
       </section>

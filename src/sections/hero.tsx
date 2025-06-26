@@ -126,10 +126,27 @@ const Hero = () => {
 
             {/* CTA Button */}
             <div className="h-8 md:h-10" />
-            <a
-              href="tel:+18135790912"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => {
+                const target = document.getElementById("quote");
+                if (target) {
+                  const headerOffset = 160; // Adjust if needed
+                  const elementPosition = target.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                  });
+                }
+
+                // Optional: Track with GTM
+                // window.dataLayer = window.dataLayer || [];
+                // window.dataLayer.push({
+                //   event: "hero_cta_click",
+                //   section: "hero",
+                // });
+              }}
               className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
             >
               <div className="relative">
@@ -142,7 +159,7 @@ const Hero = () => {
               <p className="text-[16px] font-semibold uppercase">
                 Reserve Your Dumpster
               </p>
-            </a>
+            </button>
           </div>
         </section>
       </div>

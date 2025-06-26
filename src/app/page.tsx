@@ -9,7 +9,7 @@ import {
   // WhyChoose,
   Experts,
   // ServiceAreas,
-  Contact,
+  // Contact,
   CTA,
   JunkRemovalQuote,
 } from "@/sections";
@@ -29,7 +29,7 @@ export default function Home() {
       {/* <WhyChoose /> */}
       <Experts />
       {/* <ServiceAreas /> */}
-      <Contact />
+      {/* <Contact /> */}
       <CTA />
     </>
   );

@@ -2,9 +2,9 @@
 "use client";
 
 import Image from "next/image";
-import { PhoneCall } from "lucide-react";
 import { CONTACT_INFO } from "@/lib/constants";
 import { useEffect, useState } from "react";
+import { MessageCircle, Phone, PhoneCall } from "lucide-react";
 
 const CTA = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -63,6 +63,37 @@ const CTA = () => {
                 </p>
               </div>
             </div>
+
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.getElementById("quote");
+                if (section) {
+                  const headerHeight = 160; // adjust if needed
+                  const offsetTop = section.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+                  window.scrollTo({ top: offsetTop, behavior: "smooth" });
+                }
+
+                // window.dataLayer = window.dataLayer || [];
+                // window.dataLayer.push({
+                //   event: "client_button_click",
+                //   client: "nwmngmt",
+                // });
+              }}
+              className="group bg-lime-900 hover:text-lime-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
+            >
+              <div className="relative">
+                <MessageCircle size={24} />
+                <Phone
+                  size={10}
+                  className="group-hover:fill-lime-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
+                />
+              </div>
+              <p className="hidden font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold lg:block">
+                Contact Us
+              </p>
+            </button>
           </div>
         </div>
       </section>
