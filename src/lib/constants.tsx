@@ -112,11 +112,8 @@ export const TESTIMONIALS: TestimonialType[] = [
 
 export const SERVICE_AREAS = [
   "Tampa",
-  "Orlando",
-  "Miami",
-  "Jacksonville",
+  "Clearwater",
   "St. Petersburg",
-  "Bradenton",
 ];
 
 export const EXPERT_IMAGES: Expert[] = [
