@@ -3,79 +3,52 @@
 import { Phone, MessageCircle } from "lucide-react";
 
 const StickyFooter = () => {
-  const handleCallClick = () => {
-    // const phoneNumber = "tel:+18135790912";
-
-    // Scroll to quote form
-    const quoteSection = document.getElementById("quote");
-    const headerOffset = 160;
-    if (quoteSection) {
-      const elementPosition = quoteSection.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - headerOffset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-
-    // Define redirect logic as a callback
-    // const redirectToCall = () => {
-    //   // window.location.assign(phoneNumber); // <-- DISABLED actual call
-    // };
-
-    // Push to GTM with eventCallback (ensures GTM processes the event before redirect)
+  const handleClick = () => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "client_button_click_calls",
       client: "nwmngmt",
-      // eventCallback: redirectToCall, // <-- DISABLED call callback
-      // eventTimeout: 300, // <-- optional: can leave or comment out
     });
-  };
-
-  const handleScrollToQuote = () => {
-    const quoteSection = document.getElementById("quote");
-    const headerOffset = 160;
-
-    if (quoteSection) {
-      const elementPosition = quoteSection.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
   };
 
   return (
     <div className="fixed bottom-0 z-50 w-full">
+      {/* Background layer */}
       <div className="flex flex-col items-center w-full bg-gradient-to-t from-white/70 via-white/30 to-transparent backdrop-blur-md px-4 pb-3 pt-2">
         <div className="flex w-full max-w-md gap-3">
           {/* Call Button */}
-          <button
-            onClick={handleCallClick}
+          <a
+            href="tel:+18135790912"
+            target="_blank"
+            onClick={handleClick}
             className="flex flex-1 items-center justify-center gap-2 rounded-md bg-lime-600 py-3 text-white shadow-md hover:bg-lime-700 transition"
-            aria-label="Call Now"
           >
             <Phone size={20} />
             <span className="text-sm font-semibold uppercase">Call Now</span>
-          </button>
+          </a>
 
           {/* Get Quote Button */}
           <button
-            onClick={handleScrollToQuote}
+            onClick={() => {
+              const quoteSection = document.getElementById("quote");
+              const headerOffset = 160;
+              if (quoteSection) {
+                const elementPosition = quoteSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="flex flex-1 items-center justify-center gap-2 rounded-md bg-lime-600 py-3 text-white shadow-md hover:bg-lime-700 transition"
-            aria-label="Get a Quote"
           >
             <MessageCircle size={20} />
             <span className="text-sm font-semibold uppercase">Get a Quote</span>
           </button>
         </div>
-
-        <p className="mt-2 text-l font-bold text-black">
-          1 dumpster left for same-day drop off
-        </p>
+        <p className="mt-2 text-l font-bold text-black">1 dumpster left for same-day drop off</p>
       </div>
     </div>
   );
