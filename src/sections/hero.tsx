@@ -5,6 +5,9 @@ import Image from "next/image";
 import { MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
 import { CUSTOMERS } from "@/lib/constants";
+import JunkRemovalQuote2 from "./junk-removal-quote2";
+import { SERVICE_AREAS } from "@/lib/constants";
+import { MapPinCheckInside } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -13,18 +16,23 @@ const Hero = () => {
       className="text-background bg-[url('/images/bg.png')] bg-cover bg-center pt-[58px] md:pt-[92px] xl:pt-[112px]"
     >
       <div className="bg-black-gradient">
-        <section className="flex flex-col-reverse gap-5 !pt-[20px] !pb-[190px] md:flex-row md:gap-[32.01px] md:!pt-[35px] md:!pb-[100px] xl:justify-between xl:gap-0 xl:!pb-[200px] 2xl:!pt-[60px] 2xl:gap-20">
+        <section className="flex flex-col-reverse gap-5 !pt-[20px] !pb-[10px] md:flex-row md:gap-[32.01px] md:!pt-[35px] md:!pb-[20px] xl:justify-between xl:gap-0 xl:!pb-[30px] 2xl:!pt-[60px] 2xl:gap-20">
           {/* Desktop Truck Image */}
-          <div className="hidden md:block md:w-5/12 lg:w-5/12 xl:w-5/12 2xl:w-1/2">
+          <div className="hidden md:block md:w-5/12 m-auto">
             <Image
               src="/images/truck_no_bg.png"
               alt="Trash Lion truck"
               width={653}
               height={837}
               quality={100}
-              className="mx-auto w-full max-w-[680px] scale-x-[1] object-contain md:max-w-[740px] lg:max-w-[820px] xl:max-w-[900px]"
+              className="mx-auto w-full max-w-[680px] object-contain md:max-w-[740px] lg:max-w-[820px] xl:max-w-[900px]"
               priority
             />
+
+            {/* Tablet Only: Form Below Truck */}
+            <div className="hidden md:block w-full mt-6">
+              <JunkRemovalQuote2 />
+            </div>
           </div>
 
           {/* Text Content */}
@@ -124,28 +132,40 @@ const Hero = () => {
               </div>
             </div>
 
+            {/* Areas We Serve */}
+            <div className="mt-6 w-full">
+              <p className="text-[15px] md:text-[17px] lg:text-[18px] font-semibold text-white uppercase italic text-center md:text-left mb-4">
+                Same Day Services Available
+              </p>
+              <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+                {SERVICE_AREAS.map((area, idx) => (
+                  <div key={idx} className="flex items-center gap-2.5">
+                    <MapPinCheckInside size={28} stroke="white" fill="green" />
+                    <Text
+                      variant="body2"
+                      className="text-foreground font-bold max-w-full text-white text-[16px] md:text-[20px] md:max-w-[360px] xl:max-w-[212px]"
+                    >
+                      {area}, FL
+                    </Text>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* CTA Button */}
             <div className="h-8 md:h-10" />
             <button
               onClick={() => {
                 const target = document.getElementById("quote");
                 if (target) {
-                  const headerOffset = 160; // Adjust if needed
+                  const headerOffset = 160;
                   const elementPosition = target.getBoundingClientRect().top;
                   const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
                   window.scrollTo({
                     top: offsetPosition,
                     behavior: "smooth",
                   });
                 }
-
-                // Optional: Track with GTM
-                // window.dataLayer = window.dataLayer || [];
-                // window.dataLayer.push({
-                //   event: "hero_cta_click",
-                //   section: "hero",
-                // });
               }}
               className="group bg-lime-500 hover:text-lime-600 flex h-[54px] w-full max-w-[348px] items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
             >

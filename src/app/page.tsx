@@ -8,11 +8,12 @@ import {
   Story,
   // WhyChoose,
   Experts,
-  // ServiceAreas,
+  ServiceAreas,
   // Contact,
   CTA,
   JunkRemovalQuote,
 } from "@/sections";
+import Blocks from "@/sections/blocks";
 
 export default function Home() {
   return (
@@ -24,11 +25,12 @@ export default function Home() {
       {/* <Services /> */}
       {/* <Comparison /> */}
       <Story />
+      <Blocks />
       <Testimonials />
       <Banner />
       {/* <WhyChoose /> */}
       <Experts />
-      {/* <ServiceAreas /> */}
+      <ServiceAreas />
       {/* <Contact /> */}
       <CTA />
     </>

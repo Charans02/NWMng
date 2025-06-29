@@ -6,6 +6,8 @@ import Script from "next/script";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
+import StickyFooter from "@/components/StickyFooter";
+
 import "./globals.css";
 import "./custom-toast.css";
 
@@ -58,6 +60,7 @@ export default function RootLayout({
 
         <Header />
         <main className="overflow-hidden">{children}</main>
+        <StickyFooter />
         <Footer />
 
         <Toaster
