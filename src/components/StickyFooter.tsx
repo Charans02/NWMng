@@ -4,7 +4,7 @@ import { Phone, MessageCircle } from "lucide-react";
 
 const StickyFooter = () => {
   const handleCallClick = () => {
-    const phoneNumber = "tel:+18135790912";
+    // const phoneNumber = "tel:+18135790912";
 
     // Scroll to quote form
     const quoteSection = document.getElementById("quote");
@@ -19,9 +19,9 @@ const StickyFooter = () => {
     }
 
     // Define redirect logic as a callback
-    const redirectToCall = () => {
-      // window.location.assign(phoneNumber); // <-- DISABLED actual call
-    };
+    // const redirectToCall = () => {
+    //   // window.location.assign(phoneNumber); // <-- DISABLED actual call
+    // };
 
     // Push to GTM with eventCallback (ensures GTM processes the event before redirect)
     window.dataLayer = window.dataLayer || [];
