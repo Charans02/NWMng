@@ -3,33 +3,33 @@
 import { Phone, MessageCircle } from "lucide-react";
 
 const StickyFooter = () => {
-  const handleClick = () => {
+  const handleCallClick = () => {
+    // Fire tracking event
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "client_button_click_calls",
       client: "nwmngmt",
     });
-    // Give GTM 200ms to process the event, then trigger the call
+
+    // Delay the redirect slightly for GTM to catch it
     setTimeout(() => {
-      window.location.href = "tel:+18135790912";
-    }, 200);
+      // Safe redirect (iOS-safe)
+      window.location.assign("tel:+18135790912");
+    }, 150); // keep it short and snappy
   };
 
   return (
     <div className="fixed bottom-0 z-50 w-full">
-      {/* Background layer */}
       <div className="flex flex-col items-center w-full bg-gradient-to-t from-white/70 via-white/30 to-transparent backdrop-blur-md px-4 pb-3 pt-2">
         <div className="flex w-full max-w-md gap-3">
           {/* Call Button */}
-          <a
-            href="tel:+18135790912"
-            target="_blank"
-            onClick={handleClick}
+          <button
+            onClick={handleCallClick}
             className="flex flex-1 items-center justify-center gap-2 rounded-md bg-lime-600 py-3 text-white shadow-md hover:bg-lime-700 transition"
           >
             <Phone size={20} />
             <span className="text-sm font-semibold uppercase">Call Now</span>
-          </a>
+          </button>
 
           {/* Get Quote Button */}
           <button
@@ -39,7 +39,6 @@ const StickyFooter = () => {
               if (quoteSection) {
                 const elementPosition = quoteSection.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
                 window.scrollTo({
                   top: offsetPosition,
                   behavior: "smooth",
@@ -52,7 +51,9 @@ const StickyFooter = () => {
             <span className="text-sm font-semibold uppercase">Get a Quote</span>
           </button>
         </div>
-        <p className="mt-2 text-l font-bold text-black">1 dumpster left for same-day drop off</p>
+        <p className="mt-2 text-l font-bold text-black">
+          1 dumpster left for same-day drop off
+        </p>
       </div>
     </div>
   );
