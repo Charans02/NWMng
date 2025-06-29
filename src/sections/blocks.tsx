@@ -16,7 +16,7 @@ const Blocks = () => {
       <section className="flex flex-col items-center gap-8 px-[80px] py-[60px] xl:flex-row xl:gap-40">
         <div className="relative aspect-[6/7] w-full overflow-hidden rounded-2xl xl:max-w-full order-2">
           <Image
-            src="/images/truck.jpg"
+            src="/images/picture.jpg"
             alt="Truck"
             fill
             className="object-cover object-center"
@@ -27,7 +27,7 @@ const Blocks = () => {
             variant="h2"
             className="max-w-[467px] text-center md:max-w-full xl:text-left"
           >
-            Your Best Rental Solution,
+            Why Choose,
             <span className="text-lime-700"> NW Mngmt!</span>
           </Text>
           <Text className="mt-6 max-w-[516px] text-center text-[#525252] md:max-w-full xl:text-left">

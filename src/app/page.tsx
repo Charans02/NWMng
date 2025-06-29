@@ -19,14 +19,14 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Blocks />
       <States />
       <JunkRemovalQuote />
       <Banner />
       {/* <Services /> */}
       {/* <Comparison /> */}
-      <Story />
-      <Blocks />
       <Testimonials />
+      <Story />
       <Banner />
       {/* <WhyChoose /> */}
       <Experts />

@@ -96,7 +96,7 @@ export const TESTIMONIALS: TestimonialType[] = [
   },
   {
     avatar: "/images/avatar_2.jpg",
-    name: "Sarah H",
+    name: "Craig H",
     content:
       "They made my life super easy! Ive been needing a dumpster for a long time.  but have not rented one yet due to not knowing the correct size and pricing, they are not only affordable, but came right when I asked. They came earlier  in the day for me and I got it all done in one day!",
     rating: 5,

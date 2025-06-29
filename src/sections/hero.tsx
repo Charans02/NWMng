@@ -5,7 +5,7 @@ import Image from "next/image";
 import { MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
 import { CUSTOMERS } from "@/lib/constants";
-import JunkRemovalQuote2 from "./junk-removal-quote2";
+// import JunkRemovalQuote2 from "./junk-removal-quote2";
 import { SERVICE_AREAS } from "@/lib/constants";
 import { MapPinCheckInside } from "lucide-react";
 
@@ -30,9 +30,9 @@ const Hero = () => {
             />
 
             {/* Tablet Only: Form Below Truck */}
-            <div className="hidden md:block w-full mt-6">
+            {/* <div className="hidden md:block w-full mt-6">
               <JunkRemovalQuote2 />
-            </div>
+            </div> */}
           </div>
 
           {/* Text Content */}
