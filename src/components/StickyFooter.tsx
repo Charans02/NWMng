@@ -6,9 +6,21 @@ const StickyFooter = () => {
   const handleCallClick = () => {
     const phoneNumber = "tel:+18135790912";
 
+    // Scroll to quote form
+    const quoteSection = document.getElementById("quote");
+    const headerOffset = 160;
+    if (quoteSection) {
+      const elementPosition = quoteSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+
     // Define redirect logic as a callback
     const redirectToCall = () => {
-      window.location.assign(phoneNumber);
+      // window.location.assign(phoneNumber); // <-- DISABLED actual call
     };
 
     // Push to GTM with eventCallback (ensures GTM processes the event before redirect)
@@ -16,8 +28,8 @@ const StickyFooter = () => {
     window.dataLayer.push({
       event: "client_button_click_calls",
       client: "nwmngmt",
-      eventCallback: redirectToCall,
-      eventTimeout: 300, // fallback if GTM doesn't respond in time
+      // eventCallback: redirectToCall, // <-- DISABLED call callback
+      // eventTimeout: 300, // <-- optional: can leave or comment out
     });
   };
 
