@@ -3,6 +3,14 @@
 import { Phone, MessageCircle } from "lucide-react";
 
 const StickyFooter = () => {
+  const handleClick = () => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "client_button_click_calls",
+      client: "nwmngmt",
+    });
+  };
+
   return (
     <div className="fixed bottom-0 z-50 w-full lg:hidden">
       {/* Background layer */}
@@ -12,6 +20,7 @@ const StickyFooter = () => {
           <a
             href="tel:+18135790912"
             target="_blank"
+            onClick={handleClick}
             className="flex flex-1 items-center justify-center gap-2 rounded-md bg-lime-600 py-3 text-white shadow-md hover:bg-lime-700 transition"
           >
             <Phone size={20} />
