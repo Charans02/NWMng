@@ -4,18 +4,36 @@ import { Phone, MessageCircle } from "lucide-react";
 
 const StickyFooter = () => {
   const handleCallClick = () => {
-    // Fire tracking event
+    const phoneNumber = "tel:+18135790912";
+
+    // Define redirect logic as a callback
+    const redirectToCall = () => {
+      window.location.assign(phoneNumber);
+    };
+
+    // Push to GTM with eventCallback (ensures GTM processes the event before redirect)
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "client_button_click_calls",
       client: "nwmngmt",
+      eventCallback: redirectToCall as any,
+      eventTimeout: 300, // fallback if GTM doesn't respond in time
     });
+  };
 
-    // Delay the redirect slightly for GTM to catch it
-    setTimeout(() => {
-      // Safe redirect (iOS-safe)
-      window.location.assign("tel:+18135790912");
-    }, 150); // keep it short and snappy
+  const handleScrollToQuote = () => {
+    const quoteSection = document.getElementById("quote");
+    const headerOffset = 160;
+
+    if (quoteSection) {
+      const elementPosition = quoteSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -26,6 +44,7 @@ const StickyFooter = () => {
           <button
             onClick={handleCallClick}
             className="flex flex-1 items-center justify-center gap-2 rounded-md bg-lime-600 py-3 text-white shadow-md hover:bg-lime-700 transition"
+            aria-label="Call Now"
           >
             <Phone size={20} />
             <span className="text-sm font-semibold uppercase">Call Now</span>
@@ -33,24 +52,15 @@ const StickyFooter = () => {
 
           {/* Get Quote Button */}
           <button
-            onClick={() => {
-              const quoteSection = document.getElementById("quote");
-              const headerOffset = 160;
-              if (quoteSection) {
-                const elementPosition = quoteSection.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.scrollY - headerOffset;
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: "smooth",
-                });
-              }
-            }}
+            onClick={handleScrollToQuote}
             className="flex flex-1 items-center justify-center gap-2 rounded-md bg-lime-600 py-3 text-white shadow-md hover:bg-lime-700 transition"
+            aria-label="Get a Quote"
           >
             <MessageCircle size={20} />
             <span className="text-sm font-semibold uppercase">Get a Quote</span>
           </button>
         </div>
+
         <p className="mt-2 text-l font-bold text-black">
           1 dumpster left for same-day drop off
         </p>
