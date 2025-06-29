@@ -48,21 +48,21 @@ declare global {
 }
 
 declare global {
-  interface DataLayerEvent {
-    event: string;
-    form_name?: string;
-    [key: string]: string | number | boolean | undefined;
-  }
-
   interface Window {
     gtagSendEvent?: (url: string) => void;
-
     gtag?: (
       command: 'config' | 'event' | 'set',
       targetId: string,
       params?: Record<string, unknown>
     ) => void;
-
     dataLayer: DataLayerEvent[];
+  }
+
+  interface DataLayerEvent {
+    event: string;
+    form_name?: string;
+    eventCallback?: () => void;
+    eventTimeout?: number;
+    [key: string]: unknown;
   }
 }

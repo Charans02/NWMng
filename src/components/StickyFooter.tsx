@@ -16,7 +16,7 @@ const StickyFooter = () => {
     window.dataLayer.push({
       event: "client_button_click_calls",
       client: "nwmngmt",
-      eventCallback: redirectToCall as any,
+      eventCallback: redirectToCall,
       eventTimeout: 300, // fallback if GTM doesn't respond in time
     });
   };
