@@ -12,7 +12,7 @@ const StickyFooter = () => {
   };
 
   return (
-    <div className="fixed bottom-0 z-50 w-full lg:hidden">
+    <div className="fixed bottom-0 z-50 w-full">
       {/* Background layer */}
       <div className="flex flex-col items-center w-full bg-gradient-to-t from-white/70 via-white/30 to-transparent backdrop-blur-md px-4 pb-3 pt-2">
         <div className="flex w-full max-w-md gap-3">
