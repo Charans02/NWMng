@@ -9,6 +9,10 @@ const StickyFooter = () => {
       event: "client_button_click_calls",
       client: "nwmngmt",
     });
+    // Give GTM 200ms to process the event, then trigger the call
+    setTimeout(() => {
+      window.location.href = "tel:+18135790912";
+    }, 200);
   };
 
   return (
