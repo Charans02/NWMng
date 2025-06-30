@@ -32,6 +32,38 @@ const Story = () => {
             <span className="text-lime-500 font-extrabold">NW Mngmt, </span>
             Best and Reliable Service
           </p>
+          {/* Happy Customers */}
+          <div className="relative w-full flex justify-center mt-6">
+            <div
+              className="flex flex-wrap items-center justify-center w-full max-w-[700px] px-4 py-3"
+              style={{
+                background: "linear-gradient(to right, transparent, #000, transparent)"
+              }}
+            >
+              <div className="flex items-center gap-1 sm:gap-3 md:gap-2 lg:gap-3 flex-shrink-0">
+                {CUSTOMERS.map((customer, index) => (
+                  <Image
+                    key={customer.id}
+                    src={customer.avatar_url}
+                    alt={customer.name}
+                    width={40}
+                    height={40}
+                    className={`relative ${
+                      index > 0 ? "ml-[-20px] sm:ml-0" : ""
+                    } rounded-full border-2 border-white`}
+                  />
+                ))}
+              </div>
+              <div className="flex items-center gap-2 flex-shrink-0 text-white pl-4">
+                <Text className="text-[18px] font-semibold md:text-[22px] xl:text-[28px]">
+                  60+
+                </Text>
+                <Text className="text-[13px] font-extrabold md:text-[15px] whitespace-nowrap">
+                  Happy Customers
+                </Text>
+              </div>
+            </div>
+          </div>
           <p className="text-center font-[family-name:var(--font-lato-sans)] text-[18px] leading-[34px] font-normal lg:text-left">
             <span className="font-bold text-[#6B8E23]">
               Keeping Your Demands sattisfied.
@@ -53,38 +85,8 @@ const Story = () => {
                 />
               ))}
             </div> */}
-            {/* Happy Customers */}
-            <div className="relative w-full flex justify-center mt-6">
-              <div
-                className="flex flex-wrap items-center justify-center w-full max-w-[700px] px-4 py-3"
-                style={{
-                  background: "linear-gradient(to right, transparent, #000, transparent)"
-                }}
-              >
-                <div className="flex items-center gap-1 sm:gap-3 md:gap-2 lg:gap-3 flex-shrink-0">
-                  {CUSTOMERS.map((customer, index) => (
-                    <Image
-                      key={customer.id}
-                      src={customer.avatar_url}
-                      alt={customer.name}
-                      width={40}
-                      height={40}
-                      className={`relative ${
-                        index > 0 ? "ml-[-20px] sm:ml-0" : ""
-                      } rounded-full border-2 border-white`}
-                    />
-                  ))}
-                </div>
-                <div className="flex items-center gap-2 flex-shrink-0 text-white pl-4">
-                  <Text className="text-[18px] font-semibold md:text-[22px] xl:text-[28px]">
-                    60+
-                  </Text>
-                  <Text className="text-[13px] font-extrabold md:text-[15px] whitespace-nowrap">
-                    Happy Customers
-                  </Text>
-                </div>
-              </div>
-            </div>
+            <br />
+            <br />
             <span>
               With dimensions of 14&apos; x 7.5&apos; x 4.5&apos;, it&apos;s ideal for medium-sized jobs. Each rental includes 3 days and 1000lbs of disposal — with additional days at just $19.99/day and excess weight billed at $0.06/lb.
             </span>
