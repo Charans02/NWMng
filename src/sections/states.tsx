@@ -26,9 +26,9 @@ const States = () => {
           />
           <div className="absolute bottom-[0px] flex h-[80px] w-full items-center justify-center bg-lime-700">
             <p className="font-[family-name:var(--font-lato-sans)] text-[18px] md:text-[30px] md:leading-[60px] font-semibold text-white flex items-center gap-2">
-              15 yard dumpster – 
-              <span className="text-white font-bold">$300</span>
-              <span className="text-white/70 line-through">$400</span>
+              15 yard dumpster – Special Discount
+              {/* <span className="text-white font-bold">$300</span> */}
+              {/* <span className="text-white/70 line-through">$400</span> */}
             </p>
           </div>
         </div>
