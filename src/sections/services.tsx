@@ -35,29 +35,29 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
 
   // Banner text based on service title
   const getBannerText = (title: string) => {
-    if (title === "Property clean outs") return "Arlington Curb Side Removal";
-    if (title === "Auto/Boat/RV removal") return "Mansfield Yard Waste Removal";
+    if (title === "Residential Junk Removal") return "Arlington Curb Side Removal";
+    if (title === "Yard Waste & Debris") return "Mansfield Yard Waste Removal";
     if (title === "Trash and Junk Removal") return "Grand Prairie Construction Removal";
     return "";
   };
 
   // Function to format the title with colored parts
   const formatTitle = (title: string) => {
-    if (title === "Property clean outs") {
+    if (title === "Residential Junk Removal") {
       return (
         <>
           <span className="text-lime-600">Residential</span>
           <span> Junk Removal</span>
         </>
       );
-    } else if (title === "Auto/Boat/RV removal") {
+    } else if (title === "Yard Waste & Debris") {
       return (
         <>
           <span className="text-lime-600">Yard Waste &</span>
           <span> Debris</span>
         </>
       );
-    } else if (title === "Trash and Junk Removal") {
+    } else if (title === "Construction & Renovation Cleanup") {
       return (
         <>
           <span className="text-lime-600">Construction & Renovation</span>

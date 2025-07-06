@@ -6,6 +6,8 @@ import {
 } from "react-compare-slider";
 import { Text } from "@/components/ui";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import { CUSTOMERS } from "@/lib/constants";
 // Commented carousel imports for future use
 // import { ChevronLeft, ChevronRight } from "lucide-react";
 // import useEmblaCarousel from "embla-carousel-react";
@@ -105,16 +107,41 @@ const Comparison = () => {
             <div className="flex flex-col items-center justify-center px-[20px] md:px-[35px] lg:flex-row lg:px-[60px]">
               <div className="flex flex-col">
                 <Text variant="h2" className="text-center text-white">
-                  See How We Make Your Junk{" "}
-                  <span className="font-extrabold underline">Disappear!</span>
+                  See the difference We Make in{" "}
+                  <span className="font-extrabold underline">Junk Removal</span>
                 </Text>
                 <p className="mt-4 hidden text-center font-[family-name:var(--font-sora-sans)] text-[25px] leading-[30px] font-semibold text-white/70 sm:block">
                   <span className="font-extrabold">
-                    No job is to big for the lions
+                    Big or small, we haul it all -
                   </span>
                   {"  "}
-                  we eat your junk for breakfast.
+                  junk trembles when the Haulers roll in!
                 </p>
+                {/* 👇 Add Happy Customers block here */}
+                <div className="mt-6 flex w-full justify-center">
+                  <div className="customers-container flex items-center gap-3 rounded-full border-none bg-white/10 px-4 py-2 sm:w-fit">
+                    <div className="flex items-center gap-0 sm:gap-3 md:gap-1 lg:gap-3">
+                      {CUSTOMERS.map((customer, index) => (
+                        <Image
+                          key={customer.id}
+                          src={customer.avatar_url}
+                          alt={customer.name}
+                          width={40}
+                          height={40}
+                          className={`relative ${index > 0 ? "ml-[-20px] sm:ml-0" : ""} rounded-full border-2 border-white`}
+                        />
+                      ))}
+                    </div>
+                    <div className="flex items-center gap-2 ml-4">
+                      <Text className="text-[18px] leading-[14px] font-semibold md:text-[22px] md:leading-[26px] lg:text-[22px] lg:leading-[26px] xl:text-[28px] xl:leading-[32px] text-white">
+                        60+
+                      </Text>
+                      <Text className="text-[13px] leading-[11px] font-extrabold md:text-[15px] md:leading-[20px] lg:text-[15px] lg:leading-[20px] xl:text-[15px] xl:leading-[20px] text-white/80">
+                        Happy Customers
+                      </Text>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Commented carousel navigation buttons for future use
