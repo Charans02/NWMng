@@ -42,7 +42,7 @@ const Hero = () => {
               className="text-center text-[38px] leading-[50px] sm:text-[28px] sm:leading-[43px] md:text-[34px] md:leading-[43px] lg:text-left xl:text-left xl:text-[55px] xl:leading-[78px]"
             >
               <span className="text-lime-500 font-extrabold">
-                Fast, Reliable 15-YARD DUMPSTER Rentals
+                Fast, Reliable junk hauling and DUMPSTER Rentals
               </span>
               <br />
               Delivered Today

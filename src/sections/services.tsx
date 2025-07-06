@@ -35,9 +35,9 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
 
   // Banner text based on service title
   const getBannerText = (title: string) => {
-    if (title === "Residential Junk Removal") return "Arlington Curb Side Removal";
-    if (title === "Yard Waste & Debris") return "Mansfield Yard Waste Removal";
-    if (title === "Trash and Junk Removal") return "Grand Prairie Construction Removal";
+    if (title === "Residential Junk Removal") return "Tampa yard waste removal";
+    if (title === "Yard Waste & Debris") return "St Pete curb side removal";
+    if (title === "Trash and Junk Removal") return "Clear water construction haul";
     return "";
   };
 
