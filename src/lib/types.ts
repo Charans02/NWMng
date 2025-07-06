@@ -2,6 +2,7 @@ export type ServiceType = {
   image: string;
   title: string;
   description: string;
+  imageHeight?: number;
 };
 
 export type TestimonialType = {

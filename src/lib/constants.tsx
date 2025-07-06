@@ -71,18 +71,21 @@ export const SERVICES: ServiceType[] = [
     title: "Property clean outs",
     description:
       "If you recently purchased a house or our trying to sell a house or had a tenant recently move out. We are the right guys for the job!",
+    imageHeight: 600,
   },
   {
     image: "/images/service_2.png",
     title: "Auto/Boat/RV removal",
     description:
       "We are one of the only junk removal companies in Philadelphia who are  able to get your car, boat or rv stuck in your driveway gone today!",
+    imageHeight: 600,
   },
   {
     image: "/images/service_3.png",
     title: "Trash and Junk Removal",
     description:
       "We remove any trash or junk piling up in your home, garage or any where you need it gone!",
+    imageHeight: 600,
   },
 ];
 

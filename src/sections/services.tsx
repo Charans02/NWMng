@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Text } from "@/components/ui";
 import { SERVICES } from "@/lib/constants";
 import { ServiceType } from "@/lib/types";
+// declare function gtag_report_conversion(url?: string): boolean;
 
 const Services = () => {
   return (
@@ -14,7 +15,7 @@ const Services = () => {
           variant="h2"
           className="max-w-[768px] text-center xl:max-w-[1146px]"
         >
-          We <span className="text-red">remove any unwanted junk</span> you have
+          We <span className="text-lime-700">remove any unwanted junk</span> you have
           laying around and need gone!
         </Text>
         <div className="mt-8 flex flex-col justify-between gap-8 lg:mt-16 xl:flex-row">
@@ -30,34 +31,44 @@ const Services = () => {
 export default Services;
 
 const ServiceCard = ({ s }: { s: ServiceType }) => {
+  const imageHeight = s.imageHeight || 260;
+
+  // Banner text based on service title
+  const getBannerText = (title: string) => {
+    if (title === "Property clean outs") return "Arlington Curb Side Removal";
+    if (title === "Auto/Boat/RV removal") return "Mansfield Yard Waste Removal";
+    if (title === "Trash and Junk Removal") return "Grand Prairie Construction Removal";
+    return "";
+  };
+
   // Function to format the title with colored parts
   const formatTitle = (title: string) => {
     if (title === "Property clean outs") {
       return (
         <>
-          <span className="text-red">Property</span>
-          <span> Clean Outs</span>
+          <span className="text-lime-600">Residential</span>
+          <span> Junk Removal</span>
         </>
       );
     } else if (title === "Auto/Boat/RV removal") {
       return (
         <>
-          <span className="text-red">Auto/Boat/RV</span>
-          <span> Removal</span>
+          <span className="text-lime-600">Yard Waste &</span>
+          <span> Debris</span>
         </>
       );
     } else if (title === "Trash and Junk Removal") {
       return (
         <>
-          <span className="text-red">Trash and Junk</span>
-          <span> Removal</span>
+          <span className="text-lime-600">Construction & Renovation</span>
+          <span> Cleanup</span>
         </>
       );
     }
-    // Fallback for any other titles
+
     return (
       <>
-        <span className="text-red text-[26px] md:text-[30px]">
+        <span className="text-lime-600 text-[26px] md:text-[30px]">
           {title.charAt(0).toLocaleUpperCase()}
         </span>
         <span>{title.slice(1).toLocaleUpperCase()}</span>
@@ -67,14 +78,23 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
 
   return (
     <div className="flex w-full max-w-[768px] flex-1 flex-col items-center rounded-2xl bg-white px-6 py-8 shadow">
-      <div className="relative h-[156px] w-full overflow-hidden rounded-sm md:h-[260px]">
+      <div
+        className="relative w-full overflow-hidden rounded-sm"
+        style={{ height: `${imageHeight}px` }}
+      >
+        {/* Banner Text */}
+        <div className="absolute top-0 left-0 w-full bg-lime-700 text-white text-center text-lg md:text-xl font-bold tracking-wide py-4 z-10">
+          {getBannerText(s.title)}
+        </div>
+
         <Image
           src={s.image}
-          alt=""
+          alt={s.title}
           fill
           className="object-cover object-center"
         />
       </div>
+
       <p className="mt-6 text-center text-[20px] leading-[25px] font-semibold md:text-[25px] md:leading-[32px]">
         {formatTitle(s.title)}
       </p>
