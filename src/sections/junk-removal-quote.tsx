@@ -68,6 +68,14 @@ const JunkRemovalQuote = () => {
           form_name: "Quote Form",
         });
 
+        window.parent.postMessage(
+          {
+            event: "form_submission",
+            form_name: "Quote Form"
+          },
+          "*"
+        );
+
         // ✅ Redirect to thank-you page
         window.location.href = "/thank-you";
       }
